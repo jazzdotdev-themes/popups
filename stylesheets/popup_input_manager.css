@@ -1,0 +1,26 @@
+/* This file is like none other
+because it is a css that uses tera variables
+*/
+
+{% if popup_ids %}
+
+  {% for id in popup_ids %}
+    #{{id}}:checked ~ #{{id}}_popup {
+      display: block;
+      visibility: visible;
+    }
+  {% endfor %}
+
+{% endif %}
+
+
+{% if popup_styles %}
+  .popup__container .popup__shadow {
+    z-index: {{popup_styles.filler_z_index}} ;
+  }
+
+  .popup__container .popup__message {
+    z-index: {{popup_styles.popup_z_index}} ;
+  }
+
+{% endif %}

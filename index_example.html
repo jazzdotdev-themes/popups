@@ -1,0 +1,42 @@
+{% block head %}
+  {{ super() }}
+
+  <!-- Array of all the popup ids so they can all work independently -->
+  {% set popup_ids = [popups.id, popups.id_alt] %}
+
+  <!-- styles for the pop up z-index only for now -->
+  {% set popup_styles = popups.popup_styles %}
+
+  {% include "headers/popup_manager_head.html" %}
+
+  
+{% endblock head %}
+
+
+{% block content %}
+
+  {{ super() }}     
+    
+  {% set popup_type = popups.popup_type %}
+  {% set popup_announcement = popups.announcement %}
+
+  {% set popup_id = popups.id %}
+  <!-- doing this having the id in a var will allow for custom buttons
+    the only thing is that the button must be a label with for the popup_id variable
+  -->
+  <label for="{{popup_id}}">SHOW MY POPUP</label>
+  {% include "chunks/popups_component.html" %}
+
+
+  <!-- This other popup is here to showcase how multiple popups will work in the same page , since they would use variables with the same name -->
+
+  {% set popup_type = popups.popup_type %}
+  {% set popup_announcement = popups.announcement_alt %}
+
+  {% set popup_id = popups.id_alt %}
+
+  <label for="{{popup_id}}">Completly different popup</label>
+  {% include "chunks/popups_component.html" %}
+
+
+{% endblock content %}
