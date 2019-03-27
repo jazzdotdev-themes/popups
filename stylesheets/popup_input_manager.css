@@ -19,7 +19,7 @@ because it is a css that uses tera variables
     z-index: {{popup_styles.filler_z_index}} ;
   }
 
-  .popup__container .popup__message {
+  .popup__container .popup__box {
     z-index: {{popup_styles.popup_z_index}} ;
   }
 

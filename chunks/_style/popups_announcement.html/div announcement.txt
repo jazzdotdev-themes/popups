@@ -1,1 +1,8 @@
-popup__message
+popup__box
+popup__announcement
+bg-indigo
+rounded-full
+mt-3
+p-2
+flex
+justify-center

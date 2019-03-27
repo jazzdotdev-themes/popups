@@ -1,15 +1,12 @@
-<div announcement>
-  <div message>
-    {{popup_announcement.message}}
+<div container_announcement>
+  <div announcement>
+    <div message>
+      {{popup_announcement.message}}
+    </div>
+    <label bnt_announcement for="{{popup_id}}" onclick="">
+        {{popup_announcement.button}}
+    </label>
+    
   </div>
-  <div button>    
-    <button>
-      {{popup_announcement.button}}
-    </button>
-  </div>
-  
-  <h2>
-    <label for="{{popup_id}}">Hide MY POPUP</label>
-  </h2>   
 
 </div>

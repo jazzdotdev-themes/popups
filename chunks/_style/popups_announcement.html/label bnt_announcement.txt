@@ -1,0 +1,17 @@
+text-black
+bg-white
+rounded-full
+cursor-pointer
+text-lg
+p-2
+
+my-1
+
+uppercase
+flex
+flex-no-shrink
+
+justify-center
+text-center
+
+button
