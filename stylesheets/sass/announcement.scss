@@ -1,4 +1,17 @@
+[id]{
+  &:checked{
+    >{
+      .popup__announcement{
+        @extend .animated;
+        @extend .fadeInDown;
+      }
+    }     
+  }
+}
+
+
 .popup__announcement {
+  position: fixed;
 
   .message{
     margin-left: 80px;

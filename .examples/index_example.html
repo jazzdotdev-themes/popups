@@ -1,12 +1,15 @@
+{% extends "layouts/base.html" %}
 
+
+{% block event_input %}
+  {{ super() }}
+
+{% endblock event_input %}
 {% block head %}
   {{ super() }}
-  <!--  ALL of the pop up ids must be defied here as well inside this array otherwise 
-  the popups wont work -->
-  {% set popup_ids = [popups.id, popups.id_alt,"somanyids"] %}
+  
   {% set popup_styles = popups.popup_styles %}
 
-  
   {% include "headers/popup_manager_head.html" %}
 
   
@@ -45,6 +48,7 @@
   <label for="{{popup_id}}" class="bg-red" >Completly different popup</label>
   {% include "chunks/popups_component.html" %}
 
+  {% set popup_announcement = popups.announcement_alt2 %}
 
   {% set shade = "none" %}
   {% set popup_id = "somanyids" %}

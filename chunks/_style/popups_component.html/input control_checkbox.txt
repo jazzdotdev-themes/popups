@@ -1,3 +1,4 @@
+popup_control_checkbox
 check_box
 invisible
 hidden

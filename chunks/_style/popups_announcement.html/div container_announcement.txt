@@ -1,4 +1,3 @@
-container_announcement
 flex
 justify-center
 w-full

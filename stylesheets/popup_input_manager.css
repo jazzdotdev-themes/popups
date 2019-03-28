@@ -2,16 +2,12 @@
 because it is a css that uses tera variables
 */
 
-{% if popup_ids %}
 
-  {% for id in popup_ids %}
-    #{{id}}:checked ~ #{{id}}_popup {
-      display: block;
-      visibility: visible;
-    }
-  {% endfor %}
+.popup_control_checkbox:checked+.popup__container {
+  display: block;
+  visibility: visible;
+}
 
-{% endif %}
 
 
 {% if popup_styles %}
