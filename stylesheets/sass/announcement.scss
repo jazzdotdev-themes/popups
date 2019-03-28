@@ -1,14 +1,9 @@
-[id]{
-  &:checked{
-    >{
-      .popup__announcement{
-        @extend .animated;
-        @extend .fadeInDown;
-      }
-    }     
+.popup_control_checkbox:checked+.popup__container {
+  .popup__announcement{
+    @extend .animated;
+    @extend .fadeInDown;
   }
 }
-
 
 .popup__announcement {
   position: fixed;

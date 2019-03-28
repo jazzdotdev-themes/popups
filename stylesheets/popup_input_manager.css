@@ -1,15 +1,6 @@
 /* This file is like none other
 because it is a css that uses tera variables
 */
-
-
-.popup_control_checkbox:checked+.popup__container {
-  display: block;
-  visibility: visible;
-}
-
-
-
 {% if popup_styles %}
   .popup__container .popup__shadow {
     z-index: {{popup_styles.filler_z_index}} ;
