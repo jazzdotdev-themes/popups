@@ -5,8 +5,16 @@
 <div popup_container id="{{popup_id}}_popup">
   
   <!--  the idea is to add conditional wheter to darken or lighten the page when the popup is active -->
-  <label popup_shadow popup_light for="{{popup_id}}">
+  {% if shade == "light" %}
+    <label popup_light for="{{popup_id}}">
     
+  {% elif shade == "dark" %}
+    <label popup_shadow for="{{popup_id}}">
+    
+  {% else %} 
+    <label popup_transparent for="{{popup_id}}">
+    
+  {% endif %}    
         
   </label>
   <!-- Eventually this will have a nested conditional so the type of component is 

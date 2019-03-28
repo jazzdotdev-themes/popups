@@ -7,9 +7,19 @@
   visibility: hidden;
   overflow: hidden;
 
-
-  .popup__shadow {
+  .popup__shade.shadow{
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popup__shade.light {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .popup__shade.colorless {
+    background-color: transparent;
+  }
+
+  .popup__shade {
     transition: all 1s;
     position: absolute;
     position: fixed;
