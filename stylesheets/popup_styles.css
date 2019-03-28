@@ -921,7 +921,7 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-.fadeInDown, .popup_control_checkbox:checked + .popup__container .popup__announcement {
+.fadeInDown, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
 
@@ -1289,7 +1289,7 @@
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .popup_control_checkbox:checked + .popup__container .flip.popup__announcement {
+.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2375,54 +2375,54 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement {
+.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .popup_control_checkbox:checked + .popup__container .infinite.popup__announcement {
+.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .delay-1s.popup__announcement {
+.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .delay-2s.popup__announcement {
+.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .delay-3s.popup__announcement {
+.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .delay-4s.popup__announcement {
+.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .delay-5s.popup__announcement {
+.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .popup_control_checkbox:checked + .popup__container .fast.popup__announcement {
+.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .popup_control_checkbox:checked + .popup__container .faster.popup__announcement {
+.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .popup_control_checkbox:checked + .popup__container .slow.popup__announcement {
+.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .popup_control_checkbox:checked + .popup__container .slower.popup__announcement {
+.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement {
+  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2460,12 +2460,7 @@
     top: 0; }
 
 .popup__announcement {
-  position: fixed; }
-  .popup__announcement .message {
-    margin-left: 80px;
-    margin-right: 40px; }
-  .popup__announcement .button {
-    margin-left: 40px;
-    margin-right: 40px; }
+  position: fixed;
+  width: 98%; }
 
 /*# sourceMappingURL=popup_styles.css.map */

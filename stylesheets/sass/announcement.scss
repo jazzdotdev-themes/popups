@@ -1,20 +1,14 @@
 .popup_control_checkbox:checked+.popup__container {
-  .popup__announcement{
-    @extend .animated;
-    @extend .fadeInDown;
+  .popup__announcement__container{
+    .popup__announcement{
+      @extend .animated;
+      @extend .fadeInDown;
+    }
+
   }
 }
-
 .popup__announcement {
   position: fixed;
+  width: 98%;
 
-  .message{
-    margin-left: 80px;
-    margin-right: 40px;
-  }
-
-  .button{
-    margin-left: 40px;
-    margin-right: 40px;
-  }
 }
