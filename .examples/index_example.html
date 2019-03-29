@@ -1,23 +1,7 @@
 {% extends "layouts/base.html" %}
 
 
-{% block event_input %}
-  {{ super() }}
-
-{% endblock event_input %}
-{% block head %}
-  {{ super() }}
-  
-  {% set popup_styles = popups.popup_styles %}
-
-  {% include "headers/popup_manager_head.html" %}
-
-  
-{% endblock head %}
-
-
 {% block content %}
-
   {{ super() }}     
     
   <!-- call to the slider -->
@@ -25,9 +9,9 @@
   {% include "chunks/slides.html" %}
   
 
-  <!-- static example of the subscription template -->
+  <!-- Pop up example -->
   <h2>
-    I am some sample examples    
+    I am some sample examples
   </h2>
   
   {% set popup_type = popups.popup_type %}

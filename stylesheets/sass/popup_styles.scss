@@ -1,3 +1,9 @@
+// to compile this file run `sass popup_styles.scss ../popup_styles.css`
+
+// custom sass settings
+@import 'settings';
+
+
 @import 'animate', 'popup_container';
 @import 'announcement.scss';
 @import 'login_form.scss';

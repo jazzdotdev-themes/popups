@@ -2446,6 +2446,7 @@
   .popup__container .popup__shade.colorless {
     background-color: transparent; }
   .popup__container .popup__shade {
+    z-index: 40;
     transition: all 1s;
     position: absolute;
     position: fixed;
@@ -2457,6 +2458,7 @@
     .popup__container .popup__shade::-webkit-scrollbar {
       display: none; }
   .popup__container .popup__box {
+    z-index: 50;
     top: 0; }
 
 .popup__announcement {

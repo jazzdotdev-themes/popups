@@ -27,6 +27,7 @@
   }
 
   .popup__shade {
+    z-index: $filler_z_index;
     transition: all 1s;
     position: absolute;
     position: fixed;
@@ -36,8 +37,6 @@
     left: 0;
     right: 0;
 
-
-
     &::-webkit-scrollbar {
       display: none;
     }
@@ -45,6 +44,7 @@
   }
 
   .popup__box {
+    z-index: $popup_z_index;
     top: 0;
   }
 
