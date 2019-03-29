@@ -1,6 +1,8 @@
 
 .popup_control_checkbox:checked + .popup__container{
-  display: block;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   visibility: visible;
 }
 
@@ -45,7 +47,6 @@
 
   .popup__box {
     z-index: $popup_z_index;
-    top: 0;
   }
 
 }
