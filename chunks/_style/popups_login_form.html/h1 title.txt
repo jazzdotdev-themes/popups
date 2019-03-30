@@ -1,0 +1,4 @@
+text-5xl
+uppercase
+text-center
+font-bold

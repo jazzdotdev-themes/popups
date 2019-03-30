@@ -2472,6 +2472,8 @@
   pointer-events: none; }
   .form__container .popup__login_form {
     color: #000;
-    pointer-events: all; }
+    background-color: #feed3e;
+    pointer-events: all;
+    padding: 4rem; }
 
 /*# sourceMappingURL=popup_styles.css.map */
