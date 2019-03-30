@@ -2467,7 +2467,11 @@
   top: 0;
   width: 98%; }
 
-.form_container .popup__login_form {
-  color: #000; }
+.form__container {
+  top: 0;
+  pointer-events: none; }
+  .form__container .popup__login_form {
+    color: #000;
+    pointer-events: all; }
 
 /*# sourceMappingURL=popup_styles.css.map */

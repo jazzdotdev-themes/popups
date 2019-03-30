@@ -1,3 +1,4 @@
 bg-yellow
 popup__login_form
 rounded-full
+popup__box
