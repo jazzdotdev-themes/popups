@@ -2491,11 +2491,15 @@
     /* Internet Explorer/Edge */
     user-select: none; }
   .form__container .popup__login_form {
+    max-width: 90%;
     color: #000;
-    background-color: #feed3e;
+    position: relative;
     pointer-events: all;
-    padding: 5rem;
-    border-radius: 50%; }
+    padding: 3.5rem;
+    border-radius: 50%;
+    background: #feed3e; }
+    .form__container .popup__login_form.fix_oval::after {
+      top: -10%; }
   .form__container .checkbox__remember_user {
     size: .8rem; }
   .form__container .label__remember_user, .form__container .forgotten__password {
@@ -2503,8 +2507,13 @@
     color: #1a1a1a; }
     .form__container .label__remember_user:hover, .form__container .forgotten__password:hover {
       color: #000; }
+  .form__container .forgotten__password {
+    margin-top: 5px; }
   .form__container .login_button {
     background-color: #000;
-    color: #fff; }
+    color: #fff;
+    transition: .5s transform; }
+    .form__container .login_button:hover {
+      transform: translateY(10px); }
 
 /*# sourceMappingURL=popup_styles.css.map */

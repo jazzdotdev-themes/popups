@@ -6,7 +6,7 @@
     
   <!-- call to the slider -->
   
-  {% include "chunks/slides.html" %}
+  {# include "chunks/slides.html" #}
   
 
   <!-- Pop up example -->
@@ -15,27 +15,27 @@
   </h2>
   
   {% set popup_type = popups.popup_type %}
-  {% set popup_announcement = popups.announcement %}
+  {% set popup_data = popups.data1 %}
   {% set shade = "light" %}
 
-  {% set popup_id = popups.id %}
+  {% set popup_id = popups.id1 %}
 
   <label for="{{popup_id}}" class="bg-blue" >SHOW MY POPUP</label>
   {% include "chunks/popups_component.html" %}
 
-  {% set popup_type = popups.popup_type %}
-  {% set popup_announcement = popups.announcement_alt %}
+  {% set popup_data = popups.data2 %}
   {% set shade = "dark" %}
 
-  {% set popup_id = popups.id_alt %}
+  {% set popup_id = popups.id2 %}  
+  
 
   <label for="{{popup_id}}" class="bg-red" >Completly different popup</label>
   {% include "chunks/popups_component.html" %}
 
-  {% set popup_announcement = popups.announcement_alt2 %}
+  {% set popup_data = popups.data3 %}  
 
   {% set shade = "none" %}
-  {% set popup_id = "somanyids" %}
+  {% set popup_id = popups.id3 %}
 
   <label for="{{popup_id}}" class="bg-green"> yet another  popup</label>
   {% include "chunks/popups_component.html" %}
