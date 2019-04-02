@@ -6,13 +6,16 @@
   
   <!--  the idea is to add conditional wheter to darken or lighten the page when the popup is active -->
   {% if shade == "light" %}
-    <label popup_light for="{{popup_id}}">    </label>
+    <label popup_light for="{{popup_id}}"></label>
     
   {% elif shade == "dark" %}
-    <label popup_shadow for="{{popup_id}}">    </label>
+    <label popup_shadow for="{{popup_id}}"></label>
     
-  {% else %} 
-    <label popup_transparent for="{{popup_id}}">    </label>
+  {% elif shade == "custom" %}
+    <label popup_custom for="{{popup_id}}"></label>
+
+  {% else %}
+    <label popup_transparent for="{{popup_id}}"></label>
   
   {% endif %}    
         

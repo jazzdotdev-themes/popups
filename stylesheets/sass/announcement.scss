@@ -7,9 +7,24 @@
 
   }
 }
-.popup__announcement {
-  position: fixed;
-  top: 0;
-  width: 98%;
+
+.popup__announcement__container{
+
+  .popup__announcement {
+    position: fixed;
+    top: 0;
+    width: 98%;
+
+    background-color: $announcement_container_bg;
+
+    .message{
+      color: $announcement_container_text;
+    }
+    .button{
+      background-color: $announcement_button_bg;
+      color: $announcement_button_text;
+    }
+  
+  }
 
 }

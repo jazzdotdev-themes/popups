@@ -2447,6 +2447,8 @@
     background-color: rgba(255, 255, 255, 0.5); }
   .popup__container .popup__shade.colorless {
     background-color: transparent; }
+  .popup__container .popup__shade.custom_color {
+    background-color: transparent; }
   .popup__container .popup__shade {
     z-index: 40;
     transition: all 1s;
@@ -2462,10 +2464,16 @@
   .popup__container .popup__box {
     z-index: 50; }
 
-.popup__announcement {
+.popup__announcement__container .popup__announcement {
   position: fixed;
   top: 0;
-  width: 98%; }
+  width: 98%;
+  background-color: #6574CD; }
+  .popup__announcement__container .popup__announcement .message {
+    color: #ffffff; }
+  .popup__announcement__container .popup__announcement .button {
+    background-color: #ffffff;
+    color: #22292F; }
 
 .form__container {
   top: 0;
@@ -2475,5 +2483,12 @@
     background-color: #feed3e;
     pointer-events: all;
     padding: 4rem; }
+  .form__container .checkbox__remember_user {
+    size: .8rem; }
+  .form__container .label__remember_user {
+    font-size: .8rem;
+    color: #222; }
+    .form__container .label__remember_user:hover {
+      color: #000000; }
 
 /*# sourceMappingURL=popup_styles.css.map */

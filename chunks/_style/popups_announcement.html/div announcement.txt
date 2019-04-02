@@ -1,6 +1,6 @@
 popup__box
 popup__announcement
-bg-indigo
+
 rounded-full
 mt-3
 mx-2

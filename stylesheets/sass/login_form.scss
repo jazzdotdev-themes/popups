@@ -8,4 +8,16 @@
     pointer-events: all;
     padding: 4rem;
   }
+  .checkbox__remember_user{
+    size: .8rem;
+  }
+  .label__remember_user {
+    font-size: .8rem;
+    color: #222;
+    &:hover{
+      color: #000000;
+    }
+
+  }
+
 }
