@@ -4,11 +4,18 @@ $filler_z_index: 40; //index of the shade that covers the page
 $popup_z_index: 50; //index of the popup
 
 // custom_color for shade
-$custom_shade: transparent;
+$popup_custom_shade: transparent;
 
 // Announcement popup Colors
-$announcement_container_bg: #6574CD;
-$announcement_container_text: #ffffff;
+$announcement__container_bg: #6574CD;
+$announcement__container_text: #ffffff;
 
-$announcement_button_bg: #ffffff;
-$announcement_button_text: #22292F;
+$announcement__button_bg: #ffffff;
+$announcement__button_text: #22292F;
+
+// Login Form popup variable
+$login_form__container_bg: #feed3e;
+$login_form__container_text: #000;
+
+$login_form__button_bg: #000;
+$login_form__button_text: #fff;

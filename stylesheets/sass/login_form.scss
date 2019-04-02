@@ -2,22 +2,48 @@
   top: 0;
   pointer-events: none;
 
+  .form_head{
+    // So it can't select the text
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+
+  }
+
   .popup__login_form {
-    color: #000;  
-    background-color: #feed3e;
+    color: $login_form__container_text;
+    background-color: $login_form__container_bg;
     pointer-events: all;
-    padding: 4rem;
+    padding: 5rem;
+    border-radius: 50%;
+
   }
   .checkbox__remember_user{
     size: .8rem;
   }
   .label__remember_user {
     font-size: .8rem;
-    color: #222;
+    color: lighten($login_form__container_text, 10%);
     &:hover{
-      color: #000000;
+      color: $login_form__container_text;
     }
+  }
 
+  .forgotten__password{
+    @extend .label__remember_user;
+  }
+
+  .login_button{
+    background-color: $login_form__button_bg;
+    color: $login_form__button_text;
   }
 
 }

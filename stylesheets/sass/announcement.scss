@@ -15,14 +15,14 @@
     top: 0;
     width: 98%;
 
-    background-color: $announcement_container_bg;
+    background-color: $announcement__container_bg;
 
     .message{
-      color: $announcement_container_text;
+      color: $announcement__container_text;
     }
     .button{
-      background-color: $announcement_button_bg;
-      color: $announcement_button_text;
+      background-color: $announcement__button_bg;
+      color: $announcement__button_text;
     }
   
   }

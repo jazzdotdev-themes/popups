@@ -2478,17 +2478,33 @@
 .form__container {
   top: 0;
   pointer-events: none; }
+  .form__container .form_head {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
   .form__container .popup__login_form {
     color: #000;
     background-color: #feed3e;
     pointer-events: all;
-    padding: 4rem; }
+    padding: 5rem;
+    border-radius: 50%; }
   .form__container .checkbox__remember_user {
     size: .8rem; }
-  .form__container .label__remember_user {
+  .form__container .label__remember_user, .form__container .forgotten__password {
     font-size: .8rem;
-    color: #222; }
-    .form__container .label__remember_user:hover {
-      color: #000000; }
+    color: #1a1a1a; }
+    .form__container .label__remember_user:hover, .form__container .forgotten__password:hover {
+      color: #000; }
+  .form__container .login_button {
+    background-color: #000;
+    color: #fff; }
 
 /*# sourceMappingURL=popup_styles.css.map */
