@@ -1,33 +1,31 @@
+.popup_control_checkbox:checked+.popup__container {
+  .form__container {
+    .popup__login_form {
+      @extend .animated;
+      @extend .zoomIn;
+    }
+
+  }
+}
+
+
 .form__container{
   top: 0;
   pointer-events: none;
 
-  .form_head{
-    // So it can't select the text
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-
-  }
+  
 
   .popup__login_form {
     max-width: 90%;
     color: $login_form__container_text;
     position: relative;
     pointer-events: all;
-    padding: 3.5rem;
+    padding: 4.5rem;
 
     border-radius: 50%;
     background: $login_form__container_bg;
 
+    // For perfect circle , not good with responsive designs
     // &::after{
     //   content: "";
     //   z-index: -1;
@@ -44,37 +42,53 @@
     //   border-radius: 50%;
     // }
 
-    &.fix_oval{
-      &::after {
-        top: -10%;
+    // &.fix_oval{
+    //   &::after {
+    //     top: -10%;
+    //   }
+    // }
+
+    .form_head {
+      // So it can't select the text
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+
+    }
+
+    .checkbox__remember_user{
+      size: .8rem;
+    }
+    .label__remember_user {
+      font-size: .8rem;
+      color: lighten($login_form__container_text, 10%);
+      &:hover{
+        color: $login_form__container_text;
       }
     }
-
-  }
-  .checkbox__remember_user{
-    size: .8rem;
-  }
-  .label__remember_user {
-    font-size: .8rem;
-    color: lighten($login_form__container_text, 10%);
-    &:hover{
-      color: $login_form__container_text;
+  
+    .forgotten__password{
+      @extend .label__remember_user;
+      margin-top: 5px;
     }
-  }
-
-  .forgotten__password{
-    @extend .label__remember_user;
-    margin-top: 5px;
-  }
-
-  .login_button{
-    background-color: $login_form__button_bg;
-    color: $login_form__button_text;
-
-    transition: .5s transform;
-
-    &:hover{
-      transform: translateY(10px);
+  
+    .login_button{
+      background-color: $login_form__button_bg;
+      color: $login_form__button_text;
+  
+      transition: .5s transform;
+  
+      &:hover{
+        transform: translateY(10px);
+      }
     }
   }
 

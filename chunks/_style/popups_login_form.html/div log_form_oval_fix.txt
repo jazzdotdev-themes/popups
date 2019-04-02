@@ -1,4 +1,0 @@
-popup__login_form
-fix_oval
-flex
-flex-col

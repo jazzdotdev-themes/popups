@@ -1289,7 +1289,7 @@
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement {
+.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .flip.popup__login_form {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -1949,7 +1949,7 @@
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
-.zoomIn {
+.zoomIn, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn; }
 
@@ -2375,54 +2375,54 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement {
+.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement {
+.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .infinite.popup__login_form {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement {
+.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-1s.popup__login_form {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement {
+.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-2s.popup__login_form {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement {
+.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-3s.popup__login_form {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement {
+.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-4s.popup__login_form {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement {
+.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-5s.popup__login_form {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement {
+.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .fast.popup__login_form {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement {
+.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .faster.popup__login_form {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement {
+.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement {
+.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slower.popup__login_form {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement {
+  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2478,42 +2478,40 @@
 .form__container {
   top: 0;
   pointer-events: none; }
-  .form__container .form_head {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none; }
   .form__container .popup__login_form {
     max-width: 90%;
     color: #000;
     position: relative;
     pointer-events: all;
-    padding: 3.5rem;
+    padding: 4.5rem;
     border-radius: 50%;
     background: #feed3e; }
-    .form__container .popup__login_form.fix_oval::after {
-      top: -10%; }
-  .form__container .checkbox__remember_user {
-    size: .8rem; }
-  .form__container .label__remember_user, .form__container .forgotten__password {
-    font-size: .8rem;
-    color: #1a1a1a; }
-    .form__container .label__remember_user:hover, .form__container .forgotten__password:hover {
-      color: #000; }
-  .form__container .forgotten__password {
-    margin-top: 5px; }
-  .form__container .login_button {
-    background-color: #000;
-    color: #fff;
-    transition: .5s transform; }
-    .form__container .login_button:hover {
-      transform: translateY(10px); }
+    .form__container .popup__login_form .form_head {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none; }
+    .form__container .popup__login_form .checkbox__remember_user {
+      size: .8rem; }
+    .form__container .popup__login_form .label__remember_user, .form__container .popup__login_form .forgotten__password {
+      font-size: .8rem;
+      color: #1a1a1a; }
+      .form__container .popup__login_form .label__remember_user:hover, .form__container .popup__login_form .forgotten__password:hover {
+        color: #000; }
+    .form__container .popup__login_form .forgotten__password {
+      margin-top: 5px; }
+    .form__container .popup__login_form .login_button {
+      background-color: #000;
+      color: #fff;
+      transition: .5s transform; }
+      .form__container .popup__login_form .login_button:hover {
+        transform: translateY(10px); }
 
 /*# sourceMappingURL=popup_styles.css.map */
