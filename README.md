@@ -44,16 +44,16 @@ The values that affect all popups are:
 | ------------- | ------------- | ------------- |
 | ```$filler_z_index``` | Numeric ```1``` | z index of the shade that fills the screen once a popup is open |
 | ```$popup_z_index```  | Numeric ```1```| z index any popup  |
-| ```$$popup_custom_shade```  | Color ```rgba(0,0,0,.5)```| Color of the custom color shade  |
+| ```$popup_custom_shade```  | Color ```rgba(0,0,0,.5)```| Color of the custom color shade  |
 
 #### Using custom Color Shade 
 To use a different shade just send the variable shade ```{%set shade = "dark"%}``` with any of the following string values:
 | Value | Description |
 | ------------- | ------------- |
-| ```"dark"``` | Black Shade|
-| ```"light"``` | White Shade|
-| ```"custom"``` | Custom Color Shade|
-| ```Null``` | No Shade = Transparent|
+| ```"dark"``` | Black Shade |
+| ```"light"``` | White Shade |
+| ```"custom"``` | Custom Color Shade |
+| ```Null``` | No Shade = Transparent |
 ## Announcement
 This is a drop down popup that slides in from the top of the page
 
