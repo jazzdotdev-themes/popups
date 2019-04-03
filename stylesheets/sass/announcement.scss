@@ -22,9 +22,30 @@
     }
     .button{
       background-color: $announcement__button_bg;
-      color: $announcement__button_text;
+      color: $announcement__button_text ;
+
+      &:hover{
+        @include multi_browser(animation-duration, 1s);
+        @include multi_browser(animation-name, shakeSideBySide);
+      }
     }
   
   }
 
+}
+
+@include keyframes("shakeSideBySide"){
+  0%{
+    @include multi_browser(transform, translateX(0px));
+  }
+  20%,60% {
+    @include multi_browser(transform, translateX(10px));
+  }
+  40%,80%{
+    @include multi_browser(transform, translateX(-10px));
+  }
+  100% {
+    @include multi_browser(transform, translateX(0px));
+
+  }
 }
