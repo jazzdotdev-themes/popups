@@ -2485,7 +2485,8 @@
     pointer-events: all;
     padding: 4.5rem;
     border-radius: 50%;
-    background: #feed3e; }
+    background: #feed3e;
+    transform: scale(1.2); }
     .form__container .popup__login_form .form_head {
       -webkit-touch-callout: none;
       /* iOS Safari */

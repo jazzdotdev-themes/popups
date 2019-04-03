@@ -25,28 +25,8 @@
     border-radius: 50%;
     background: $login_form__container_bg;
 
-    // For perfect circle , not good with responsive designs
-    // &::after{
-    //   content: "";
-    //   z-index: -1;
-    //   top: 0;
-    //   left: 0;
-    //   position: absolute;
-    //   display: block;
-    //   width: 100%;
-    //   padding-bottom: 100%;
-    //   height:0;
-    //   background: $login_form__container_bg;      
-    //   -moz-border-radius: 50%;
-    //   -webkit-border-radius: 50%;
-    //   border-radius: 50%;
-    // }
+    transform: scale(1.2);
 
-    // &.fix_oval{
-    //   &::after {
-    //     top: -10%;
-    //   }
-    // }
 
     .form_head {
       // So it can't select the text
