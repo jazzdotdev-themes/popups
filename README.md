@@ -31,7 +31,7 @@ This design allows for the button that triggers the popup to have any design you
 
 Quick guide in how to use each popup
 
-### General things:
+### General Aspects:
 
 #### Behavior 
 All popups will close once you click outside of them 
@@ -48,12 +48,13 @@ The values that affect all popups are:
 
 #### Using custom Color Shade 
 To use a different shade just send the variable shade ```{%set shade = "dark"%}``` with any of the following string values:
+
 | Value | Description |
 | ------------- | ------------- |
 | ```"dark"``` | Black Shade |
 | ```"light"``` | White Shade |
 | ```"custom"``` | Custom Color Shade |
-| ```Null``` | No Shade = Transparent |
+| ```Null``` | No Shade/Transparent |
 ## Announcement
 This is a drop down popup that slides in from the top of the page
 
