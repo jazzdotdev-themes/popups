@@ -61,11 +61,11 @@ This is a drop down popup that slides in from the top of the page
 #### Variables
 In the html template the popup will read the following variables
 
-```
-popup_data.message # Information display 
+| Name  | Description |
+| ------------- | ------------- |
+| ```popup_data.message``` | Information to display |
+| ```popup_data.message``` | Name to displayed in the button |
 
-popup_data.button # Name displayed in the button
-```
 by default the button only closes the popup
 #### Custom Color Sass Variables 
 | Name  | Description |
