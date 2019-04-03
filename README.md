@@ -65,7 +65,10 @@ data = {
 ```
 
 ## Announcement
-This is a drop down popup that slides in from the top of the page
+This is a drop down popup that slides in from the top of the page.
+To use this popup the popup type must be equals to ```"announcement"```
+  
+```{% set popup_type = "announcement" %}```
 
 #### Variables
 In the html template the popup will read the following variables
