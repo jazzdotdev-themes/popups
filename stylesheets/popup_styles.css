@@ -1,3 +1,27 @@
+i.exit_icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px; }
+
+i.exit_icon.icon__black {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px; }
+
+i.exit_icon.icon__white {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px; }
+
+i.exit_icon.icon__grey {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2598,6 +2622,11 @@
     border-radius: 50%;
     background: #feed3e;
     transform: scale(1.2); }
+    .form__container .popup__login_form .exit_icon.form_exit_icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer; }
     .form__container .popup__login_form .form_head {
       -webkit-touch-callout: none;
       /* iOS Safari */

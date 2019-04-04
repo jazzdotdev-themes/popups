@@ -1,0 +1,28 @@
+@mixin exit_icon_img($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23#{unquote($color)}' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E");
+}
+
+$icons_colors: (
+  icon__black: "000000",
+  icon__white: "FFFFFF",
+  icon__grey: "999999",
+);
+
+i.exit_icon {
+  @include exit_icon_img("000000");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+
+@each $color_name ,$value in $icons_colors {
+  
+  i.exit_icon.#{$color_name}{  
+    @include exit_icon_img($value);  
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+  }
+  
+}
+
