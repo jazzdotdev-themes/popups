@@ -1,25 +1,32 @@
 # popup_type = "announcement"
-popup_type = "login_form"
+# popup_type = "login_form"
+popup_type = "email_subscription"
 
 data1 = {
   title = "lorem",
   subtitle = "Lorem Ipsum",
   message = "Quis qui ullamco cillum magna enim qui in. Deserunt sunt laborum laboris nulla ex officia nisi eiusmod duis sunt non. Voluptate velit id ea ea et duis culpa. Proident elit ut labore aliquip amet.",
-  button = "Lorem Ipsum"
+  button = "I am a Button",
+  showcase_image = "https://image.flaticon.com/icons/svg/214/214316.svg",
+  deny_msg = "No Thanks"
 }
 
 data2 = {
   title = "HelloWorld!",
   subtitle = "hello there",
   message = "Some Other announcement",
-  button = "Lorem Ipsum"
+  button = "I am a Button",
+  showcase_image = "https://image.flaticon.com/icons/svg/214/214316.svg",
+  deny_msg = "No Thanks"
 }
 
 data3 = {
   title = "Hello!",
   subtitle = "Lorem",
   message = "Some Other announcement",
-  button = "Thank You"
+  button = "I am a Button",
+  showcase_image = "https://image.flaticon.com/icons/svg/214/214316.svg",
+  deny_msg = "No Thanks"
 }
 
 id1 = "some_unique_id"
