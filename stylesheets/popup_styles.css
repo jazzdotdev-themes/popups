@@ -1,4 +1,4 @@
-.form__container {
+.form__container, .email_subscription_container {
   top: 0;
   pointer-events: none;
   width: 100%;
@@ -2495,7 +2495,7 @@ i.exit_icon.icon__grey {
     right: 0; }
     .popup__container .popup__shade::-webkit-scrollbar {
       display: none; }
-  .popup__container .popup__box, .popup__container .form__container {
+  .popup__container .popup__box, .popup__container .form__container, .popup__container .email_subscription_container {
     z-index: 50; }
 
 .popup__announcement__container .popup__announcement {
@@ -2661,5 +2661,16 @@ i.exit_icon.icon__grey {
     transition: .5s transform; }
     .form__container .popup__login_form .login_button:hover {
       transform: translateY(10px); }
+
+.email_subscription_container .email_popup {
+  background-color: #ebe6e4;
+  border-radius: .5rem;
+  padding: 1rem;
+  pointer-events: all;
+  max-width: 90%;
+  max-height: 100vh; }
+  .email_subscription_container .email_popup .slide_in_container {
+    max-width: 512px;
+    max-height: 512px; }
 
 /*# sourceMappingURL=popup_styles.css.map */

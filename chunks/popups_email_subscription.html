@@ -1,6 +1,34 @@
 <div email_subscription_container >
 
   <div popup_email_subscription >
-    LOREM LOREM 
+
+    <div slide_in_container>
+      <img src="{{popup_data.showcase_image}}" alt="image">
+
+    </div>
+    <div head_subs >
+      <h1>
+        {{popup_data.title}}
+      </h1>
+      <h2 sub_title>
+        {{popup_data.subtitle}}
+      </h2>
+    </div>
+    <form action="">
+      <input type="email" name="email" id="email_subscription_{{popup_id}}" placeholder="Email">
+      
+      <button submit_button>
+        {{popup_data.button}}        
+      </button>
+
+      <label not_interested for="{{popup_id}}">
+        {{popup_data.deny_msg}}
+      </label>
+
+
+    </form>
+
   </div>
+
+  
 </div>
