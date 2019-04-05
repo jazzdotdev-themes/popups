@@ -10,8 +10,7 @@
 
 
 .form__container{
-  top: 0;
-  pointer-events: none;
+  @extend %popup_container_centerer;
   
 
   .popup__login_form {

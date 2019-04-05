@@ -1,8 +1,2 @@
 form__container
-h-full
-w-full
-fixed
-flex
-items-center
-justify-center
-popup__box
+
