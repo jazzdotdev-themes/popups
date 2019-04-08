@@ -1,7 +1,14 @@
 email_popup
+
 flex
 flex-col-reverse
 sm:flex-col-reverse
 md:flex-row
 lg:flex-row
 xl:flex-row
+
+items-center
+justify-center
+
+p-2
+m-4

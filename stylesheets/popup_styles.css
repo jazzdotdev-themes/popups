@@ -2662,15 +2662,20 @@ i.exit_icon.icon__grey {
     .form__container .popup__login_form .login_button:hover {
       transform: translateY(10px); }
 
-.email_subscription_container .email_popup {
-  background-color: #ebe6e4;
-  border-radius: .5rem;
-  padding: 1rem;
-  pointer-events: all;
-  max-width: 90%;
-  max-height: 95%; }
-  .email_subscription_container .email_popup .slide_in_container {
-    max-width: 400px;
-    max-height: 400px; }
+.email_subscription_container {
+  position: absolute;
+  top: 10px; }
+  .email_subscription_container .email_popup {
+    background-color: #ebe6e4;
+    border-radius: .5rem;
+    pointer-events: all;
+    min-width: 60%;
+    max-width: 90%; }
+    .email_subscription_container .email_popup .slide_in_container {
+      max-width: 512px;
+      max-height: 512px; }
+      .email_subscription_container .email_popup .slide_in_container .image_slide {
+        width: 100%;
+        height: 100%; }
 
 /*# sourceMappingURL=popup_styles.css.map */

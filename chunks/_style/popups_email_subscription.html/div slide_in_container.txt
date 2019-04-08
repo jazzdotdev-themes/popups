@@ -4,5 +4,7 @@ sm:w-full
 md:w-1/2
 lg:w-1/2
 xl:w-1/2
-p-4
-m-4
+
+p-2
+m-2
+flex
