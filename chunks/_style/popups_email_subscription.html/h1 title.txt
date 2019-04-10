@@ -3,3 +3,4 @@ text-center
 font-extrabold
 uppercase
 title
+flex-1

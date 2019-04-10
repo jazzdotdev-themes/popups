@@ -6,15 +6,16 @@
     border-radius: .5rem;    
     pointer-events: all ;//Important
     max-width: 90%;
-    max-height: 95vh;
+    max-height: 95%;
 
     overflow-y: scroll;
+
     @include screen_sm{
       overflow-y: scroll;
 
     }
     @include screen_md{
-      overflow-y: scroll;
+      overflow-y: unset;
 
     }
     @include screen_lg{
@@ -30,24 +31,20 @@
 
     
     .slide_in_container{
-      // max-width: 512px;
-      // max-height: 512px;
+ 
 
-      max-width: 300px;
-      max-height: 300px;
+      max-width: 100%;
 
       height: auto;
       width: 100%;
       
       @include screen_sm{
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 100%;
         height: auto;
         width: 100%;
       }
       @include screen_md {        
-        max-width: 512px;
-        max-height: 512px;
+        max-width: 100%;
         height: auto;
         width: 400px;
       }
@@ -73,22 +70,23 @@
           
     }
     .main_content{
-      min-width: 300px;
+      // height: 400px;
+      // min-width: 300px;
 
-      @include screen_sm{
-        min-width: 300px;
-      }
-      @include screen_md {        
-        min-width: 400px;
+      // @include screen_sm{
+      //   min-width: 300px;
+      // }
+      // @include screen_md {        
+      //   min-width: 400px;
 
-      }
-      @include screen_lg {
-        min-width: 400px;
+      // }
+      // @include screen_lg {
+      //   min-width: 400px;
 
-      }
-      @include screen_xl {
-        min-width: 400px;
-      }
+      // }
+      // @include screen_xl {
+      //   min-width: 400px;
+      // }
 
 
       .email__input{
@@ -98,6 +96,7 @@
 
 
       .title{
+        margin-top: 40px;
         word-wrap: break-word;
         font-family: 'Bungee Shade', cursive;
       }
