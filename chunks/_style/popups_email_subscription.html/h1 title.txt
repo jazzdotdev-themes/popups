@@ -1,1 +1,4 @@
-text-2xl
+text-5xl
+text-center
+font-extrabold
+uppercase

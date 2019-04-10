@@ -10,17 +10,11 @@
     max-width: 90%;
     max-height: 95vh;
 
-
-    // width: 700px;
-    // height: 400px;
-    // overflow-y: scroll;
     
     .slide_in_container{
       max-width: 300px;
       max-height: 300px;
 
-      // width: 512px;
-      // height: 512px;
       
       @include screen_sm{
         max-width: 300px;

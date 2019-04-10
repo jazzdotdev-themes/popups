@@ -1,0 +1,4 @@
+text-center
+text-xl
+font-normal
+capitalize

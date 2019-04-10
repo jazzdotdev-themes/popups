@@ -9,3 +9,5 @@ xl:flex-row
 
 items-center
 justify-center
+
+font-sans
