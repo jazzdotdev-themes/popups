@@ -1,1 +1,3 @@
 text-sm
+w-full
+text-center

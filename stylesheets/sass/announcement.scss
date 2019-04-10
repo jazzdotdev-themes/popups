@@ -36,16 +36,16 @@
 
 @include keyframes("shakeSideBySide"){
   0%{
-    @include multi_browser(transform, translateX(0px));
+    @include multi_browser("transform", "translateX(0px)");
   }
   20%,60% {
-    @include multi_browser(transform, translateX(8px));
+    @include multi_browser("transform", "translateX(8px)");
   }
   40%,80%{
-    @include multi_browser(transform, translateX(-8px));
+    @include multi_browser("transform", "translateX(-8px)");
   }
   100% {
-    @include multi_browser(transform, translateX(0px));
+    @include multi_browser("transform", "translateX(0px)");
 
   }
 }

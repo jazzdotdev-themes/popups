@@ -1,25 +1,60 @@
 .email_subscription_container{
   @extend %popup_container_centerer;
-  position: absolute;
-  top: 10px;
+  // top: 10px;
 
   .email_popup{
     background-color: #ebe6e4;
     border-radius: .5rem;    
     pointer-events: all ;//Important
-    min-width: 60%;
+    // min-width: 45%;    
     max-width: 90%;
+    max-height: 95vh;
+
+
+    // width: 700px;
+    // height: 400px;
     // overflow-y: scroll;
-
+    
     .slide_in_container{
-      max-width: 512px;
-      max-height: 512px;      
-      .image_slide{    
-        width: 100%;
-        height: 100%;
+      max-width: 300px;
+      max-height: 300px;
 
+      // width: 512px;
+      // height: 512px;
+      
+      @include screen_sm{
+        max-width: 300px;
+        max-height: 300px;
+      }
+      @include screen_md {        
+        max-width: 512px;
+        max-height: 512px;
+        width: 300px;
+        height: 300px;
+      }
+      @include screen_lg {
+        max-width: 512px;
+        max-height: 512px;
+        width: 400px;
+        height: 400px;
+      }
+      @include screen_xl {
+        max-width: 512px;
+        max-height: 512px;
+        width: 400px;
+        height: 400px;
+      }
+      
+      .image_slide{   
+
+        object-fit: fill;
       }
           
+    }
+
+    .email__input{
+      // max-width: 200px;
+      height: 40px;
     }
   }
 

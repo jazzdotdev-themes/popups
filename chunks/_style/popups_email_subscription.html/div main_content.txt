@@ -1,12 +1,15 @@
 main_content
+
 w-full
 sm:w-full
 
-md:w-1/2
-lg:w-1/2
-xl:w-1/2
+md:w-2/3
+lg:w-2/3
+xl:w-2/3
 
 flex
+flex-1
 flex-wrap
-p-4
-m-4
+items-center
+
+p-2

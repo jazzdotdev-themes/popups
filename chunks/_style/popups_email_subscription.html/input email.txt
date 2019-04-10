@@ -1,5 +1,8 @@
+email__input
 border
 border-black
 rounded-full
 p-3
-m-1
+mr-3
+
+w-2/5

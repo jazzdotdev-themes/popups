@@ -1,11 +1,3 @@
-@mixin multi_browser_property($name,$value) {
-  -webkit-#{unquote($name)}: unquote($value);
-  -moz-#{unquote($name)}: unquote($value);
-  -ms-#{unquote($name)}: unquote($value);
-  -o-#{unquote($name)}: unquote($value);
-  #{unquote($name)}: unquote($value);
-}
-
 %popup_container_centerer{
   @extend .popup__box ;
   top: 0;

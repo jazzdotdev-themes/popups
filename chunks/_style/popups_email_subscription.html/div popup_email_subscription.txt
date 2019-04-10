@@ -9,6 +9,3 @@ xl:flex-row
 
 items-center
 justify-center
-
-p-2
-m-4

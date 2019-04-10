@@ -1,3 +1,6 @@
 rounded-full
 bg-yellow
-p-4
+text-red
+p-3
+
+w-full
