@@ -2667,35 +2667,69 @@ i.exit_icon.icon__grey {
   border-radius: .5rem;
   pointer-events: all;
   max-width: 90%;
-  max-height: 95vh; }
+  max-height: 95vh;
+  overflow-y: scroll; }
+  @media (min-width: 576px) {
+    .email_subscription_container .email_popup {
+      overflow-y: scroll; } }
+  @media (min-width: 768px) {
+    .email_subscription_container .email_popup {
+      overflow-y: scroll; } }
+  @media (min-width: 992px) {
+    .email_subscription_container .email_popup {
+      overflow-y: unset; } }
+  @media (min-width: 1200px) {
+    .email_subscription_container .email_popup {
+      overflow-y: unset; } }
   .email_subscription_container .email_popup .slide_in_container {
     max-width: 300px;
-    max-height: 300px; }
+    max-height: 300px;
+    height: auto;
+    width: 100%; }
     @media (min-width: 576px) {
       .email_subscription_container .email_popup .slide_in_container {
         max-width: 300px;
-        max-height: 300px; } }
+        max-height: 300px;
+        height: auto;
+        width: 100%; } }
     @media (min-width: 768px) {
       .email_subscription_container .email_popup .slide_in_container {
         max-width: 512px;
         max-height: 512px;
-        width: 300px;
-        height: 300px; } }
+        height: auto;
+        width: 400px; } }
     @media (min-width: 992px) {
       .email_subscription_container .email_popup .slide_in_container {
         max-width: 512px;
         max-height: 512px;
-        width: 400px;
-        height: 400px; } }
+        height: auto;
+        width: 450px; } }
     @media (min-width: 1200px) {
       .email_subscription_container .email_popup .slide_in_container {
         max-width: 512px;
         max-height: 512px;
-        width: 400px;
-        height: 400px; } }
+        height: auto;
+        width: 450px; } }
     .email_subscription_container .email_popup .slide_in_container .image_slide {
-      object-fit: fill; }
-  .email_subscription_container .email_popup .email__input {
-    height: 40px; }
+      object-fit: contain; }
+  .email_subscription_container .email_popup .main_content {
+    min-width: 300px; }
+    @media (min-width: 576px) {
+      .email_subscription_container .email_popup .main_content {
+        min-width: 300px; } }
+    @media (min-width: 768px) {
+      .email_subscription_container .email_popup .main_content {
+        min-width: 400px; } }
+    @media (min-width: 992px) {
+      .email_subscription_container .email_popup .main_content {
+        min-width: 400px; } }
+    @media (min-width: 1200px) {
+      .email_subscription_container .email_popup .main_content {
+        min-width: 400px; } }
+    .email_subscription_container .email_popup .main_content .email__input {
+      height: 40px; }
+    .email_subscription_container .email_popup .main_content .title {
+      word-wrap: break-word;
+      font-family: 'Bungee Shade', cursive; }
 
 /*# sourceMappingURL=popup_styles.css.map */

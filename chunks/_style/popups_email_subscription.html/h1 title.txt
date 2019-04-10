@@ -2,3 +2,4 @@ text-5xl
 text-center
 font-extrabold
 uppercase
+title

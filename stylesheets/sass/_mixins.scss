@@ -51,19 +51,3 @@
     @content;
   }
 }
-
-$screen_sizes_tailwind:(
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-);
-
-@mixin multiscreen($hash) {
-  @each $hash_name ,$value in $hash {
-    @if $hash_name {
-
-      
-    }
-  }
-}
