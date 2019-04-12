@@ -1,0 +1,22 @@
+# This is the button that will trigger a popup to open
+description = "PopupButton"
+fields = {
+  name = {
+    type = "string"
+  },
+  text = {
+    type = "string"
+  },
+  background-color = {
+    type = "string"
+  },
+  text-color = {
+    type = "string"
+  },
+  close-behavior = {
+    type = "string"
+  },
+  position = {
+    type = "string"
+  }
+}

@@ -1,0 +1,25 @@
+# Pop up model for popup theme information
+description = "Popup"
+fields = {
+  name = {
+    type = "string"
+  },
+  title = {
+    type = "string"
+  },
+  subtitle = {
+    type = "string"
+  },
+  message = {
+    type = "string"
+  },
+  image-url = {
+    type = "string"
+  },
+  cancel-message = {
+    type = "string"
+  },
+  popup-button = {
+    type = "uuid"
+  }
+}
