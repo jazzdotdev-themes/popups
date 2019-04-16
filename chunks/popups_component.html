@@ -1,33 +1,30 @@
 <!-- input for event control -->
-<input control_checkbox type="checkbox" id="{{popup_id}}" >
+<input control_checkbox type="checkbox" id="{{popup.id}}" >
 
 <!-- Main container of the popup -->
-<div popup_container id="{{popup_id}}_popup">
+<div popup_container id="{{popup.id}}_popup">
   
   <!--  the idea is to add conditional wheter to darken or lighten the page when the popup is active -->
-  {% if shade == "light" %}
-    <label popup_light for="{{popup_id}}"></label>
+  {% if popup.shade == "light" %}
+    <label popup_light for="{{popup.id}}"></label>
     
-  {% elif shade == "dark" %}
-    <label popup_shadow for="{{popup_id}}"></label>
+  {% elif popup.shade == "dark" %}
+    <label popup_shadow for="{{popup.id}}"></label>
     
-  {% elif shade == "custom" %}
-    <label popup_custom for="{{popup_id}}"></label>
+  {% elif popup.shade == "custom" %}
+    <label popup_custom for="{{popup.id}}"></label>
 
   {% else %}
-    <label popup_transparent for="{{popup_id}}"></label>
+    <label popup_transparent for="{{popup.id}}"></label>
   
   {% endif %}    
         
   <!-- Eventually this will have a nested conditional so the type of component is 
     a variables instead of having to include know the name of the chunk of the popup
   -->
-  {% if popup_type == "announcement" %}    
-    {% include  "chunks/popups_announcement.html" %}
-  {% elif popup_type == "login_form" %}
-    {% include  "chunks/popups_login_form.html" %}
-  {% elif popup_type == "email_subscription" %}
-    {% include  "chunks/popups_email_subscription.html" %}
-  {% endif %}
+  {% block popup_content %}
+
+
+  {% endblock popup_content %}
   
 </div>

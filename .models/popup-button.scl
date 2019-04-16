@@ -7,13 +7,13 @@ fields = {
   text = {
     type = "string"
   },
-  background-color = {
+  background_color = {
     type = "string"
   },
-  text-color = {
+  text_color = {
     type = "string"
   },
-  close-behavior = {
+  close_behavior = {
     type = "string"
   },
   position = {

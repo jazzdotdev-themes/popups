@@ -13,13 +13,19 @@ fields = {
   message = {
     type = "string"
   },
-  image-url = {
+  image_url = {
     type = "string"
   },
-  cancel-message = {
+  cancel_message = {
     type = "string"
   },
-  popup-button = {
+  popup_button = {
     type = "uuid"
+  },
+  shade = {
+    type = "string"
+  },
+  submit_button_text = {
+    type = "string"
   }
 }

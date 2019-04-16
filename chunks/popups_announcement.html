@@ -1,12 +1,18 @@
-<div container_announcement>
-  
-  <div announcement>
-    <div message>
-      {{popup_data.message}}
-    </div>
-    <label bnt_announcement for="{{popup_id}}" onclick="">
-        {{popup_data.button}}
-    </label>    
-  </div>
+{% extends "chunks/popups_component.html" %}
 
-</div>
+{% block popup_content %}
+  {{ super() }}   
+  
+  <div container_announcement>    
+    <div announcement>
+      <div message>
+        {{popup.message}}
+      </div>
+      <label bnt_announcement for="{{popup.id}}" onclick="">
+          {{popup.submit_button_text}}
+      </label>    
+    </div>
+  </div>    
+
+{% endblock popup_content %}
+

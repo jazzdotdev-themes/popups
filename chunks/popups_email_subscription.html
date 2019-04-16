@@ -1,44 +1,51 @@
-<div email_subscription_container >
+{% extends "chunks/popups_component.html" %}
 
-  <div popup_email_subscription >
+{% block popup_content %}
+  {{ super() }}   
+  
+  <div email_subscription_container >
 
-    <div slide_in_container>
-      <img image_slide_in src="{{popup_data.showcase_image}}" alt="image">
+    <div popup_email_subscription >
 
-    </div>
+      <div slide_in_container>
+        <img image_slide_in src="{{popup_data.showcase_image}}" alt="image">
 
-    <div main_content>
-      <div head_subs >
-        <h1 title>
-          {{popup_data.title}}
-        </h1>
-        <h2 sub_title>
-          {{popup_data.subtitle}}
-        </h2>
       </div>
 
-
-      <form email_subcription action="">
-        <input email type="email" name="email" id="email_subscription_{{popup_id}}" placeholder="Email">
-        <div confirmation_container>
-          <button submit_button>
-            {{popup_data.button}}        
-          </button>
-      
-          <label not_interested for="{{popup_id}}">
-            {{popup_data.deny_msg}}
-          </label>
-
+      <div main_content>
+        <div head_subs >
+          <h1 title>
+            {{popup_data.title}}
+          </h1>
+          <h2 sub_title>
+            {{popup_data.subtitle}}
+          </h2>
         </div>
 
+
+        <form email_subcription action="">
+          <input email type="email" name="email" id="email_subscription_{{popup_id}}" placeholder="Email">
+          <div confirmation_container>
+            <button submit_button>
+              {{popup_data.button}}        
+            </button>
         
-      </form>
+            <label not_interested for="{{popup_id}}">
+              {{popup_data.deny_msg}}
+            </label>
+
+          </div>
+
+          
+        </form>
 
 
+
+      </div>
 
     </div>
 
+
   </div>
-
-
-</div>
+  
+{% endblock popup_content %}
