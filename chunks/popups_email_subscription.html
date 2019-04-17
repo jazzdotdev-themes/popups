@@ -8,30 +8,31 @@
     <div popup_email_subscription >
 
       <div slide_in_container>
-        <img image_slide_in src="{{popup_data.showcase_image}}" alt="image">
+        <img image_slide_in src="{{popup.image_url}}" alt="image">
 
       </div>
 
       <div main_content>
         <div head_subs >
           <h1 title>
-            {{popup_data.title}}
+
+            {{popup.title}}
           </h1>
           <h2 sub_title>
-            {{popup_data.subtitle}}
+            {{popup.subtitle}}
           </h2>
         </div>
 
 
         <form email_subcription action="">
-          <input email type="email" name="email" id="email_subscription_{{popup_id}}" placeholder="Email">
+          <input email type="email" name="email" id="email_subscription_{{popup.id}}" placeholder="Email">
           <div confirmation_container>
             <button submit_button>
-              {{popup_data.button}}        
+              {{popup.submit_button_text}}
             </button>
         
-            <label not_interested for="{{popup_id}}">
-              {{popup_data.deny_msg}}
+            <label not_interested for="{{popup.id}}">
+              {{popup.cancel_message}}
             </label>
 
           </div>
