@@ -41,7 +41,7 @@ To use a different shade just send the variable shade ```{%set shade = "dark"%}`
 #### Setting up variables and Custom Button
 All variables need to be reasigned to their respective names before the instance of the button that will trigger the popup and the popup itself , as seen in the example below:
 
-```
+```Django
   {% set popup_type = "announcement" %}
 
   {% set shade = "light" %}
@@ -118,3 +118,44 @@ In the html template the popup will read the following variables
 | ```$login_form__button_bg``` | Background color of the login button |
 | ```$login_form__button_text``` | Text color of the login button |
 
+
+# New Implementation with Models
+---
+The popup components need a popup and popup component both of them can be created manually or with the built-in document interface at the ```/popup``` and ```/popup_button```
+this url will be added automatically once the respective model files are added at ```packages/send-file-package/models/``` , this file can be found in the ```.models/``` folder in this repository
+
+## Popup Model description (WIP)
+
+*[OPT]: Optional will be applied only if the component implements it
+*[WIP]: Functionally not implemented or completed yet
+
+| Name  | Description | Values |
+| ------------- | ------------- | ------------- |
+| name | popup name | string |
+| title | title of the popup <b>OPT</b> | string |
+| subtitle | subtitle of the popup <b>OPT</b> | string |
+| message | main information of the popup <b>OPT</b> | string |
+| image_url | url source of the main image withing the popup | url |
+| cancel_message | deny message to close the popup <b>OPT</b> | string|
+| popup_button | reference to the popup button | uuid |
+| shade | color of shade to use when the popup its open | "dark", "light", "custom" |
+| submit_button_text | text of the button in the popup , mostly to accept or submit something | string |
+| close_behaviour  | Closing behavior of the popup , the pop will always close if the main submit button is clicked.  | "shade", "exit_icon", "shade_exit_icon",  |
+
+### Loading popup
+
+Using this function will load the popup to work with the template standart considering that all the needed fields are available and that both the `popup` the `popup_button` have been recreated and linked correctly.
+
+```lua
+-- Method to prepare a popup for the template standart
+-- @params
+-- popup_id : uuid : the id of the popup
+function loadpopup(popup_id)
+  local popup = contentdb.read_document(popup_id)
+  local popup_button = contentdb.read_document(popup.popup_button)
+  popup.id = popup_id
+  popup.button = popup_button
+  
+  return popup
+end
+local popup_fields = loadpopup(popup_id)```
