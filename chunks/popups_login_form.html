@@ -7,35 +7,35 @@
       
     <div login_form  >
 
-      <label for="{{popup_id}}">
+      <label for="{{popup.id}}">
         <i exit_icon > </i>
       </label>
 
       <div head>
         <h1 title>
-          {{popup_data.title}}        
+          {{popup.title}}        
         </h1>
         <h2 sub_title>
-          {{popup_data.subtitle}}        
+          {{popup.subtitle}}        
         </h2>
       </div>
         
-      <!-- <form input_form method="GET"> -->
-      <form input_form>
+      <!-- <form input_form > -->
+      <form input_form method="POST">
         <input username_user type="text" name="username" id="" placeholder="Email or Username">
         
         <input password_user type="password" name="password" placeholder="Password" id="">
         <div data_remember >
-          <input check_remember type="checkbox" name="remember_me" id="{{popup_id}}_remember_me">
+          <input check_remember type="checkbox" name="remember_me" id="{{popup.id}}_remember_me">
     
-          <label remember_user for="{{popup_id}}_remember_me">
+          <label remember_user for="{{popup.id}}_remember_me">
             Remember me
           </label>
         </div>
 
         <!-- <button type="submit"> -->
-        <button login_button> 
-          {{popup_data.button}}
+        <button login_button type="submit" > 
+          {{popup.submit_button_text}}
         </button>
       </form>
 

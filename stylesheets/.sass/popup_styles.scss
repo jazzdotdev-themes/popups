@@ -1,0 +1,20 @@
+// to compile this file run `sass popup_styles.scss ../popup_styles.css`
+
+// custom sass settings
+@import 'settings';
+
+// Icons
+@import 'icons/icon_data';
+
+// Shared styles among popups
+@import 'shared/generic';
+@import 'shared/mixins';
+@import 'shared/animate';
+@import 'shared/popup_container';
+
+// Popups
+@import 'popups/announcement';
+@import 'popups/login_form';
+@import 'popups/email_subscription';
+
+ 
