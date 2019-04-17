@@ -7,13 +7,7 @@ fields = {
   text = {
     type = "string"
   },
-  background_color = {
-    type = "string"
-  },
-  text_color = {
-    type = "string"
-  },
-  close_behavior = {
+  class_references = {
     type = "string"
   },
   position = {

@@ -10,14 +10,24 @@ local slide_weights = {}
 -- 
 -- Popup test new implementation
 -- 
-local popup_id = settings.popups.popup_id
 
-local popup_fields = contentdb.read_document(popup_id)
+-- Method to prepare a popup for the template standart 
+-- @params
+-- popup_id : uuid : the id of the popup
+function loadpopup(popup_id)
+  local popup = contentdb.read_document(popup_id)
+  local popup_button = contentdb.read_document(popup.popup_button)
+  popup.id = popup_id
+  popup.button = popup_button
+  
+  return popup
+end
 
-local popup_button_id = settings.popups.popup_button_id
+local popup_fields = loadpopup(settings.popups.popup_id)
 -- 
 -- 
 -- 
+
 
 contentdb.walk_documents(nil, function (slide_id, fields, body)
   if fields.model == "slide" and fields.slideshow == slideshow_id then
@@ -43,7 +53,6 @@ local homepage = render("index.html", {
   articles = {},
   slides = slides,
   popup = popup_fields,
-  -- popups = settings.popups,
 })
 
 return {
