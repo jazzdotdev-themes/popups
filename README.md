@@ -126,18 +126,18 @@ this url will be added automatically once the respective model files are added a
 
 ## Popup Model description (WIP)
 
-<b>[OPT]</b>: Optional will be applied only if the component implements it
+**[OPT]:** Optional will be applied only if the component implements it
 
-<b>[WIP]:</b> Functionally not implemented or completed yet
+**[WIP]:** Functionally not implemented or completed yet
 
 | Name  | Description | Values |
 | ------------- | ------------- | ------------- |
 | name | popup name | string |
-| title | title of the popup <b>OPT</b> | string |
-| subtitle | subtitle of the popup <b>OPT</b> | string |
-| message | main information of the popup <b>OPT</b> | string |
+| title | title of the popup **OPT** | string |
+| subtitle | subtitle of the popup **OPT** | string |
+| message | main information of the popup **OPT** | string |
 | image_url | url source of the main image withing the popup | url |
-| cancel_message | deny message to close the popup <b>OPT</b> | string|
+| cancel_message | deny message to close the popup **OPT** | string|
 | popup_button | reference to the popup button | uuid |
 | shade | color of shade to use when the popup its open | "dark", "light", "custom" |
 | submit_button_text | text of the button in the popup , mostly to accept or submit something | string |
