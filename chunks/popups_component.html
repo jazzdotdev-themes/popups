@@ -1,18 +1,19 @@
+{# popup parent template #}
 <!-- Custom Stylesheets  -->
-<style type="text/css">
-  {% include "stylesheets/custom_popup_styles.css" %}
-</style>
 
+{# Include of the button that once click it will open the popup #}
+{# this button can be customized with the popup model #}
 {% include "chunks/popups_button.html" %}
 
 <!-- input for event control -->
 <input control_checkbox type="checkbox" id="{{popup.id}}" >
 
 <!-- Main container of the popup -->
-<div popup_container id="{{popup.id}}_popup">
-  
+<div popup_container id="{{popup.id}}_popup" popup_id="{{popup.id}}" >
+  {# Conditional to add the behavior that the popup closes once you click outside of the popup #}
+
   {% if popup.close_behaviour == "shade" or popup.close_behaviour == "shade_exit_icon" %}
-    <!-- Selector of conditional for what type of shade to use when the popup is active -->
+    {# Conditional to add the correct type of shade color #}
     {% if popup.shade == "light" %}
       <label shade_light for="{{popup.id}}"></label>
       
@@ -27,6 +28,7 @@
     
     {% endif %}    
   {% else %}
+    {# Shade color if the popup wont close once you click outside of it #}
     {% if popup.shade == "light" %}
       <div shade_light for="{{popup.id}}"></div>
       
@@ -42,10 +44,8 @@
     {% endif %} 
 
   {% endif %}
-        
-  <!-- Eventually this will have a nested conditional so the type of component is 
-    a variables instead of having to include know the name of the chunk of the popup
-  -->
+  
+  {# Popup block content so other popups inherit from this template #}
   {% block popup_content %}
 
 

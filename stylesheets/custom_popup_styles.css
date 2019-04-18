@@ -1,6 +1,6 @@
-.popup__container .popup__shade.custom_color {
+[popup_id="{{popup.id}}"] .popup__shade.custom_color {
   {% if popup.custom_shade_color %}
-  background-color: {{popup.custom_shade_color}};
+    background-color: {{popup.custom_shade_color}};
   
-  {% endif%}
+  {% endif %}
 }

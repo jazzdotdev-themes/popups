@@ -8,14 +8,10 @@
     <div login_form  >
 
       <label for="{{popup.id}}">
-        <i exit_icon > </i>
-        {% if popup.shade == "light" %}
-          <i exit_icon_dark  > </i>
-        {% elif popup.shade == "dark" %}
+        {% if popup.shade == "dark" %}
           <i exit_icon_light > </i>
         {% else %}
-          <i exit_icon_grey > </i>
-        
+          <i exit_icon_dark > </i>        
         {% endif %}    
       </label>
 

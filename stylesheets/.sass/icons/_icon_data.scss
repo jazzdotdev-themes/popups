@@ -17,12 +17,14 @@ i.exit_icon {
 }
 
 @each $color_name ,$value in $icons_colors {
-  
-  i.exit_icon.#{$color_name}{  
-    @include exit_icon_img($value);  
-    width: $icons_default_size;
-    height: $icons_default_size;
-    background-size: $icons_default_size $icons_default_size;
+  label,i{
+    &.exit_icon.#{$color_name}{  
+      @include exit_icon_img($value);  
+      width: $icons_default_size;
+      height: $icons_default_size;
+      background-size: $icons_default_size $icons_default_size;
+    }
+
   }
   
 }
