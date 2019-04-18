@@ -2,7 +2,7 @@
   @extend %popup_container_centerer;
 
   .email_popup{
-    background-color: #ebe6e4;
+    background-color: #EBEAF2;
     border-radius: .5rem;    
     pointer-events: all ;//Important
     max-width: 90%;
@@ -26,13 +26,9 @@
       overflow-y: unset;
 
     }
-
-    
-
-    
+      
     .slide_in_container{
- 
-
+       
       max-width: 100%;
 
       height: auto;

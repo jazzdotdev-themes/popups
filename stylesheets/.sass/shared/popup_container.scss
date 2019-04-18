@@ -28,10 +28,11 @@
     background-color: transparent;
   }
 
-  .popup__shade.custom_color {
-    background-color: $popup_custom_shade;
-  }
+  // .popup__shade.custom_color {
+  //   background-color: $popup_custom_shade;
+  // }
 
+  
   .popup__shade {
     z-index: $filler_z_index;
     transition: all 1s;

@@ -1,0 +1,2 @@
+exit_icon
+icon__white

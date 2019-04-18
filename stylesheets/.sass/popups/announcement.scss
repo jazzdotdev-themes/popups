@@ -16,6 +16,18 @@
     width: 98%;
 
     background-color: $announcement__container_bg;
+    
+    // X exit icon
+    .exit_icon {
+      cursor: pointer;
+      position: absolute;
+      top: 4px;
+      left: 18px;
+
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px;
+    }
 
     .message{
       color: $announcement__container_text;

@@ -2481,8 +2481,6 @@ i.exit_icon.icon__grey {
     background-color: rgba(255, 255, 255, 0.5); }
   .popup__container .popup__shade.colorless {
     background-color: transparent; }
-  .popup__container .popup__shade.custom_color {
-    background-color: transparent; }
   .popup__container .popup__shade {
     z-index: 40;
     transition: all 1s;
@@ -2503,6 +2501,14 @@ i.exit_icon.icon__grey {
   top: 0;
   width: 98%;
   background-color: #6574CD; }
+  .popup__announcement__container .popup__announcement .exit_icon {
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px; }
   .popup__announcement__container .popup__announcement .message {
     color: #ffffff; }
   .popup__announcement__container .popup__announcement .button {
@@ -2663,7 +2669,7 @@ i.exit_icon.icon__grey {
       transform: translateY(10px); }
 
 .email_subscription_container .email_popup {
-  background-color: #ebe6e4;
+  background-color: #EBEAF2;
   border-radius: .5rem;
   pointer-events: all;
   max-width: 90%;

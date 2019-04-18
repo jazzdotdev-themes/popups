@@ -126,8 +126,9 @@ this url will be added automatically once the respective model files are added a
 
 ## Popup Model description (WIP)
 
-*[OPT]: Optional will be applied only if the component implements it
-*[WIP]: Functionally not implemented or completed yet
+<b>[OPT]</b>: Optional will be applied only if the component implements it
+
+<b>[WIP]:</b> Functionally not implemented or completed yet
 
 | Name  | Description | Values |
 | ------------- | ------------- | ------------- |
@@ -147,7 +148,7 @@ this url will be added automatically once the respective model files are added a
 Using this function will load the popup to work with the template standart considering that all the needed fields are available and that both the `popup` the `popup_button` have been recreated and linked correctly.
 
 ```lua
--- Method to prepare a popup for the template standart
+-- Method to prepare a popup for the template standard
 -- @params
 -- popup_id : uuid : the id of the popup
 function loadpopup(popup_id)
