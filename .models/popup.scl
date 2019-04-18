@@ -24,8 +24,14 @@ fields = {
   },
   shade = {
     type = "string"
+  },  
+  custom_shade_color = {
+    type = "string"
   },
   submit_button_text = {
+    type = "string"
+  },
+  close_behaviour = {
     type = "string"
   }
 }
