@@ -1,0 +1,3 @@
+form_exit_icon
+exit_icon
+icon__grey
