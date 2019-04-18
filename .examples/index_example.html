@@ -1,12 +1,52 @@
 {% extends "layouts/base.html" %}
 
+{% block style %}
+  {{ super() }} {# IMPORTANT to add the super tag #}
+  
+  {% for popup in popups %}
+
+    <!-- Styles for {{popup.name}} -->
+    {% set popup = popup %} <!-- Reasignation of variable do to lost of context inside an included template-->
+    <style type="text/css">
+      {% include "stylesheets/custom_popup_styles.css" %}
+    </style>  
+  {% endfor %}
+
+{% endblock style %}
 
 {% block content %}
   {{ super() }}     
+    
+  <!-- call to the slider -->
   
-  <label for="{{popup.id}}">Trigger the button</label>
+  {% include "chunks/slides.html" %}
 
-  {% include "chunks/popups_announcement.html" %}
+  <br>
+  <br>
+  <br>
 
+  {% set popup = popups[0] %}
+  
+  {% include "chunks/popups_login_form.html" %}
 
+  {% set popup = popups[1] %}
+  {% include "chunks/popups_email_subscription.html" %}
+  {# include "chunks/popups_login_form.html" #}
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 {% endblock content %}

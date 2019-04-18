@@ -11,7 +11,7 @@ local slide_weights = {}
 -- Popup test new implementation
 -- 
 
--- Method to prepare a popup for the template standart 
+-- Method to prepare a popup for the template standard 
 -- @params
 -- popup_id : uuid : the id of the popup
 function loadpopup(popup_id)
@@ -23,7 +23,9 @@ function loadpopup(popup_id)
   return popup
 end
 
-local popup_fields = loadpopup(settings.popups.popup_id)
+local popup_fields_1 = loadpopup(settings.popups.popup_id)
+
+local popup_fields_2 = loadpopup(settings.popups.popup_id2)
 -- 
 -- 
 -- 
@@ -52,7 +54,7 @@ local homepage = render("index.html", {
   SITENAME = settings.sitename,
   articles = {},
   slides = slides,
-  popup = popup_fields,
+  popups = {popup_fields_1 , popup_fields_2},
 })
 
 return {
