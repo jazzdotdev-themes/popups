@@ -1323,7 +1323,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .flip.popup__login_form {
+.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .flip.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .flip.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .flip.slide_in_container {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -1983,7 +1983,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
-.zoomIn, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
+.zoomIn, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn; }
 
@@ -2285,7 +2285,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-.slideInLeft {
+.slideInLeft, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft; }
 
@@ -2409,54 +2409,54 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
+.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .infinite.popup__login_form {
+.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .infinite.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .infinite.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .infinite.slide_in_container {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-1s.popup__login_form {
+.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-1s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-1s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-1s.slide_in_container {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-2s.popup__login_form {
+.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-2s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-2s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-2s.slide_in_container {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-3s.popup__login_form {
+.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-3s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-3s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-3s.slide_in_container {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-4s.popup__login_form {
+.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-4s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-4s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-4s.slide_in_container {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-5s.popup__login_form {
+.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-5s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-5s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-5s.slide_in_container {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .fast.popup__login_form {
+.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .fast.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .fast.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .fast.slide_in_container {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .faster.popup__login_form {
+.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .faster.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .faster.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .faster.slide_in_container {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form {
+.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slower.popup__login_form {
+.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slower.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .slower.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slower.slide_in_container {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form {
+  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2668,6 +2668,10 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     .form__container .popup__login_form .login_button:hover {
       transform: translateY(10px); }
 
+.popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
+  animation-delay: 0.5s;
+  animation-timing-function: ease; }
+
 .email_subscription_container .email_popup {
   background-color: #EBEAF2;
   border-radius: .5rem;
@@ -2675,6 +2679,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   max-width: 90%;
   max-height: 95%;
   position: fixed;
+  overflow-x: hidden;
   overflow-y: scroll; }
   @media (min-width: 576px) {
     .email_subscription_container .email_popup {
@@ -2689,9 +2694,11 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     .email_subscription_container .email_popup {
       overflow-y: unset; } }
   .email_subscription_container .email_popup .exit_icon {
-    height: 24px;
-    width: 24px;
-    background-size: 24px 24px; }
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    top: 10px;
+    right: 10px; }
   .email_subscription_container .email_popup .slide_in_container {
     max-width: 100%;
     height: auto;

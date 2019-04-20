@@ -1,6 +1,4 @@
 exit_icon
 icon__black
 absolute
-pin-t
-pin-l
 cursor-pointer

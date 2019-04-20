@@ -1,3 +1,23 @@
+.popup_control_checkbox:checked+.popup__container {
+  .email_subscription_container {
+    .email_popup {
+      @extend .animated ;
+      @extend .zoomIn ;
+      @extend .slow ;
+
+      .slide_in_container{
+        @extend .animated ;
+        @extend .slideInLeft ;
+        @extend .slow ;
+        animation-delay: 0.5s;
+        animation-timing-function: ease;
+              
+      }
+    }
+
+  }
+}
+
 .email_subscription_container{
   @extend %popup_container_centerer;
 
@@ -8,6 +28,7 @@
     max-width: 90%;
     max-height: 95%;
     position: fixed;
+    overflow-x: hidden;
 
     overflow-y: scroll;
 
@@ -28,9 +49,11 @@
 
     }
     .exit_icon{
-      height: 24px;
-      width: 24px;
-      background-size: 24px 24px;
+      height: 16px;
+      width: 16px;
+      background-size: 16px 16px;
+      top: 10px;
+      right: 10px;
     }
 
 
@@ -67,36 +90,15 @@
       
       .image_slide{   
         object-fit: contain;    
-        // margin: .5rem;
 
       }
           
     }
     .main_content{
-      // height: 400px;
-      // min-width: 300px;
-
-      // @include screen_sm{
-      //   min-width: 300px;
-      // }
-      // @include screen_md {        
-      //   min-width: 400px;
-
-      // }
-      // @include screen_lg {
-      //   min-width: 400px;
-
-      // }
-      // @include screen_xl {
-      //   min-width: 400px;
-      // }
-
       
       .email__input{
-        // max-width: 200px;
         height: 40px;
       }
-
 
       .title{
         margin-top: 40px;
