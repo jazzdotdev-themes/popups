@@ -25,9 +25,13 @@
     background-color: #EBEAF2;
     border-radius: .5rem;    
     pointer-events: all ;//Important
-    max-width: 500px;
     max-height: 95%;
-    
+    max-width: 90%;
+
+    @include screen_md(){
+      max-width: 800px; //max width for big sizes
+      max-height: 500;
+    }
 
     position: fixed;
     overflow-x: hidden;
@@ -82,6 +86,7 @@
         height: auto;
         width: 450px;
       }
+
       @include screen_xl {
         max-width: 512px;
         max-height: 512px;
@@ -94,12 +99,14 @@
         object-fit: contain;    
 
       }
-          
+      
     }
     .main_content{
       
-      .email__input{
+      .email__input{ //Text field of the popup
         height: 40px;
+        min-width: 200px;
+        // max-width: 300px;
       }
 
       .title{

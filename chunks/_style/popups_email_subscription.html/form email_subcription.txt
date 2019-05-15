@@ -1,4 +1,4 @@
 w-full
 flex
-flex-wrap
+flex-row
 justify-center

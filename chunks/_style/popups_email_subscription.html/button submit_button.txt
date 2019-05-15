@@ -1,7 +1,9 @@
 rounded-full
-bg-yellow-400
-text-red-600
-capitalize
+bg-yellow-bright
+text-red-bright
+hover:bg-yellow-400
+uppercase
+font-bold
 p-3
 
 w-full

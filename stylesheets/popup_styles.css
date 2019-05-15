@@ -32,6 +32,12 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   justify-content: center;
   align-items: center; }
 
+.bg-yellow-bright {
+  background-color: #FEDE00; }
+
+.text-red-bright {
+  color: #DD0200; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2676,11 +2682,15 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   background-color: #EBEAF2;
   border-radius: .5rem;
   pointer-events: all;
-  max-width: 90%;
   max-height: 95%;
+  max-width: 90%;
   position: fixed;
   overflow-x: hidden;
   overflow-y: scroll; }
+  @media (min-width: 768px) {
+    .email_subscription_container .email_popup {
+      max-width: 800px;
+      max-height: 500; } }
   @media (min-width: 576px) {
     .email_subscription_container .email_popup {
       overflow-y: scroll; } }
@@ -2728,7 +2738,8 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     .email_subscription_container .email_popup .slide_in_container .image_slide {
       object-fit: contain; }
   .email_subscription_container .email_popup .main_content .email__input {
-    height: 40px; }
+    height: 40px;
+    min-width: 200px; }
   .email_subscription_container .email_popup .main_content .title {
     margin-top: 40px;
     word-wrap: break-word;

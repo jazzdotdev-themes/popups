@@ -1,3 +1,5 @@
 text-sm
 w-full
 text-center
+uppercase
+cursor-pointer
