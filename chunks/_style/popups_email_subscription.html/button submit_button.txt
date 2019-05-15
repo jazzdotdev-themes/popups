@@ -1,6 +1,7 @@
 rounded-full
-bg-yellow
-text-red
+bg-yellow-400
+text-red-600
+capitalize
 p-3
 
 w-full

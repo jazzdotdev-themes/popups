@@ -34,7 +34,7 @@ The popup models can be found in the ```.models/``` folder of this repository. T
 | cancel_message | deny message to close the popup | string| :x: |
 | popup_button | reference to the popup button | uuid | :heavy_check_mark: |
 | shade | color of shade to use when the popup its open, any not valid name will result in a transparent shade | "dark", "light", "custom" | :x: |
-| custom_shade_color | A color in any valid css format, recommended to have some level of reduced opacity | string | :heavy_check_mark: |
+| custom_shade_color | A color in any valid css format, recommended to have some level of reduced opacity | string | :x: |
 | submit_button_text | text of the button in the popup , mostly to accept or submit something | string | :heavy_check_mark: |
 | close_behaviour  | Additional closing behavior for the popup, the popup will always close if the main submit button is clicked.  | ```"shade", "exit_icon", "shade_exit_icon"```   | :x: |
 

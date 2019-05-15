@@ -3,6 +3,7 @@
 
 {# Include of the button that once click it will open the popup #}
 {# this button can be customized with the popup model #}
+
 {% include "chunks/popups_button.html" %}
 
 <!-- input for event control -->
@@ -18,7 +19,7 @@
       <label shade_light for="{{popup.id}}"></label>
       
     {% elif popup.shade == "dark" %}
-      <label shade_shadow for="{{popup.id}}"></label>
+      <label shade_dark for="{{popup.id}}"></label>
       
     {% elif popup.shade == "custom" %}
       <label shade_custom for="{{popup.id}}"></label>
@@ -27,13 +28,13 @@
       <label shade_transparent for="{{popup.id}}"></label>
     
     {% endif %}    
-  {% else %}
+  {% elif popup.close_behaviour == "exit_icon" %}
     {# Shade color if the popup wont close once you click outside of it #}
     {% if popup.shade == "light" %}
       <div shade_light for="{{popup.id}}"></div>
       
     {% elif popup.shade == "dark" %}
-      <div shade_shadow for="{{popup.id}}"></div>
+      <div shade_dark for="{{popup.id}}"></div>
       
     {% elif popup.shade == "custom" %}
       <div shade_custom for="{{popup.id}}"></div>
@@ -46,8 +47,8 @@
   {% endif %}
   
   {# Popup block content so other popups inherit from this template #}
+  
   {% block popup_content %}
-
 
   {% endblock popup_content %}
   
