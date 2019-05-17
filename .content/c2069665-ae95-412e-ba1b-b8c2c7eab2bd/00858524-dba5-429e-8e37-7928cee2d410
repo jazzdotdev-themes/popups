@@ -1,0 +1,9 @@
+---
+class_references="bg-yellow-500"
+creation_time="Wed, 15 May 2019 18:28:27 +0000"
+model="popup_button"
+name="example_1_button"
+position="bottom"
+request_uuid="f7628524-f370-4bf2-8261-ff3ffc1a635b"
+text="Click me example_1"
+...

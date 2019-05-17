@@ -8,6 +8,7 @@ Currently available popups:
 
 - Announcement
 - Login Form
+- Email Subscription
 
 This was design to allow for the button that triggers the popup to have any design you want
 

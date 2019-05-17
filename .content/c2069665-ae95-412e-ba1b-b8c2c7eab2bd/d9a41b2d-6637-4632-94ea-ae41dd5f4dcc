@@ -1,5 +1,5 @@
 ---
-class_references="bg-blue rounded p-4 m-4 my_modal_button"
+class_references="bg-blue-500 rounded p-4 m-4 my_modal_button"
 creation_time="Tue, 16 Apr 2019 16:49:30 +0000"
 model="popup_button"
 name="workshop_plan_button"
