@@ -2474,6 +2474,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   visibility: visible; }
 
 .popup__container {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
