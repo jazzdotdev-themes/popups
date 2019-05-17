@@ -16,23 +16,6 @@
   display: none;
   visibility: hidden;
   overflow: hidden;
-
-  .popup__shade.shadow{
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .popup__shade.light {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .popup__shade.colorless {
-    background-color: transparent;
-  }
-
-  // .popup__shade.custom_color {
-  //   background-color: $popup_custom_shade;
-  // }
-
   
   .popup__shade {
     z-index: $filler_z_index;
@@ -49,6 +32,15 @@
       display: none;
     }
 
+    &.shadow {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.light {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    &.colorless {
+      background-color: transparent;
+    }
   }
 
   .popup__box {

@@ -1,3 +1,5 @@
 popup__login_form
 flex
 flex-col
+
+popup__box

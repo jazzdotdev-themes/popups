@@ -1,0 +1,6 @@
+promotion_popup
+
+bg-white
+rounded
+p-32
+popup__box
