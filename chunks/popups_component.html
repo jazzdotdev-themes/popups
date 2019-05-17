@@ -15,6 +15,7 @@
 
   {% if popup.close_behaviour == "shade" or popup.close_behaviour == "shade_exit_icon" %}
     {# Conditional to add the correct type of shade color #}
+    <!-- light shade that cover the screen -->
     {% if popup.shade == "light" %}
       <label shade_light for="{{popup.id}}"></label>
       
@@ -49,6 +50,7 @@
   {# Popup block content so other popups inherit from this template #}
   
   {% block popup_content %}
+    <!-- Block of content of the popup -->
 
   {% endblock popup_content %}
   
