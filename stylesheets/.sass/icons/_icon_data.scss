@@ -9,11 +9,14 @@ $icons_colors: (
 );
 $icons_default_size: 24px;
 
-i.exit_icon {
-  @include exit_icon_img("000000");
-  width: $icons_default_size;
-  height: $icons_default_size;
-  background-size: $icons_default_size $icons_default_size;
+i,label{
+  &.exit_icon {
+    @include exit_icon_img("000000");
+    width: $icons_default_size;
+    height: $icons_default_size;
+    background-size: $icons_default_size $icons_default_size;
+  }
+
 }
 
 @each $color_name ,$value in $icons_colors {

@@ -3,6 +3,8 @@
     .promotion_popup {
       @extend .animated ;
       @extend .fadeInLeft ;
+      @extend .slow ;
+
     }
 
   }
@@ -10,17 +12,19 @@
 
 
 .promotion_container{
-  // @extend %popup_container_centerer;
   
   .promotion_popup{
-    @extend %popup_generic;
+    // only in small sizes
+    max-width: 95%;
+    @include screen_md() {
+      max-width: 28rem;
+    }
 
-    left: 0;
-    top: 0;
-    
-    height: 100vh;
-    margin: 0;
-  
+    .exit_icon {
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px;
+    }
   }
 
 

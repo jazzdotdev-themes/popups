@@ -5,7 +5,21 @@
   <div promotion_container >
 
     <div promotion_popup >
-      {{popup.title}}
+      {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
+        HEy
+        <label exit_icon for="{{popup.id}}">
+        </label>
+      {% endif %}
+      <p>
+        {{popup.title}}
+      </p>
+      <p>
+        {{popup.subtitle}}
+      </p>
+      <p>
+        {{popup.message}}
+        
+      </p>
     </div>
 
   </div>

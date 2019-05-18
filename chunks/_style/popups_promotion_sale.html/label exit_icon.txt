@@ -2,6 +2,6 @@ exit_icon
 icon__black
 absolute
 cursor-pointer
-m-3
 top-0
 right-0
+m-3

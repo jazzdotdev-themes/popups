@@ -5,4 +5,4 @@ rounded-full
 p-3
 mr-3
 
-w-2/5
+flex-grow
