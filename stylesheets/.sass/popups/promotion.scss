@@ -17,6 +17,32 @@
   .promotion_popup{
     // only in the smallest sizes
     max-width: 95%;
+    overflow-y: scroll;
+
+		//Scrollbar options
+		/* width */
+		&::-webkit-scrollbar{
+			width: 5px;
+
+    }
+		/* Track */
+		&::-webkit-scrollbar-track{
+			background: transparent ;
+			border-radius: 15px;
+
+    }
+		/* Handle */
+		&::-webkit-scrollbar-thumb{
+			background: rgba(173, 173, 173, 0.55);
+			border-radius: 10px;
+
+    }
+
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			background: rgba(173, 173, 173, 0.85);
+
+    }
 
     @include screen_sm() {
       //from 576px screen size or bigger
@@ -34,9 +60,13 @@
       max-height: auto;
 
     }
-
+    .promotion__title{
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+    
     .promotion__subtitle{
-      
+      text-shadow: 1px 1px 5px #000;
+      font-size: 6.5rem;
     }
   }
 

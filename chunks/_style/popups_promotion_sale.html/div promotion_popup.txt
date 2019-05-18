@@ -1,6 +1,6 @@
 promotion_popup
 bg-white
-p-4
+p-8
 popup__box
 
 fixed
@@ -12,4 +12,3 @@ m-0
 bg-blue-900
 text-center
 font-sans
-overflow-y-scroll

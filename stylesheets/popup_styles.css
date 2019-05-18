@@ -2750,7 +2750,22 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   animation-duration: 1.5s; }
 
 .promotion_container .promotion_popup {
-  max-width: 95%; }
+  max-width: 95%;
+  overflow-y: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .promotion_container .promotion_popup::-webkit-scrollbar {
+    width: 5px; }
+  .promotion_container .promotion_popup::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px; }
+  .promotion_container .promotion_popup::-webkit-scrollbar-thumb {
+    background: rgba(173, 173, 173, 0.55);
+    border-radius: 10px; }
+  .promotion_container .promotion_popup::-webkit-scrollbar-thumb:hover {
+    background: rgba(173, 173, 173, 0.85); }
   @media (min-width: 576px) {
     .promotion_container .promotion_popup {
       max-width: 350px; } }
@@ -2761,5 +2776,10 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   .promotion_container .promotion_popup .detail_image {
     max-width: 95%;
     max-height: auto; }
+  .promotion_container .promotion_popup .promotion__title {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+  .promotion_container .promotion_popup .promotion__subtitle {
+    text-shadow: 1px 1px 5px #000;
+    font-size: 6.5rem; }
 
 /*# sourceMappingURL=popup_styles.css.map */

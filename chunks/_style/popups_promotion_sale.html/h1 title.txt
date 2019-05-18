@@ -3,3 +3,5 @@ text-white
 bold
 text-5xl
 font-black
+promotion__title
+m-0

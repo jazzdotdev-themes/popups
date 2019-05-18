@@ -1,0 +1,12 @@
+w-full
+my-1
+p-2
+uppercase
+rounded
+
+text-white
+text-2xl
+font-extrabold
+
+bg-pink-400
+hover:bg-pink-500
