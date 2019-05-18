@@ -1,6 +1,8 @@
 promotion_popup
-
 bg-white
-rounded
 p-32
+
 popup__box
+fixed
+top-0
+left-0

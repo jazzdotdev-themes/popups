@@ -32,6 +32,9 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   justify-content: center;
   align-items: center; }
 
+.promotion_container .promotion_popup {
+  position: fixed; }
+
 .bg-yellow-bright {
   background-color: #FEDE00; }
 
@@ -2504,8 +2507,6 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     z-index: 50; }
 
 .popup__announcement__container .popup__announcement {
-  position: fixed;
-  top: 0;
   width: 98%;
   background-color: #6574CD; }
   .popup__announcement__container .popup__announcement .exit_icon {
@@ -2747,8 +2748,9 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     font-family: 'Bungee Shade', cursive; }
 
 .promotion_container .promotion_popup {
-  position: fixed;
   left: 0;
-  margin: 5px; }
+  top: 0;
+  height: 100vh;
+  margin: 0; }
 
 /*# sourceMappingURL=popup_styles.css.map */

@@ -1,5 +1,7 @@
 popup__box
 popup__announcement
+fixed
+top-0
 
 rounded-full
 mt-3
