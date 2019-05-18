@@ -36,8 +36,8 @@
       color: $announcement__button_text ;
 
       &:hover{
-        @include multi_browser(animation-duration, 1s);
-        @include multi_browser(animation-name, shakeSideBySide);
+        @include multi_browser("animation-duration", "1s");
+        @include multi_browser("animation-name", "shakeSideBySide");
       }
     }
   

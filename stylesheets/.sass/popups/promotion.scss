@@ -3,7 +3,8 @@
     .promotion_popup {
       @extend .animated ;
       @extend .fadeInLeft ;
-      @extend .slow ;
+      // @extend .slow ;
+      animation-duration: 1.5s;
 
     }
 
@@ -14,16 +15,28 @@
 .promotion_container{
   
   .promotion_popup{
-    // only in small sizes
+    // only in the smallest sizes
     max-width: 95%;
-    @include screen_md() {
-      max-width: 28rem;
+
+    @include screen_sm() {
+      //from 576px screen size or bigger
+      max-width: 350px;
     }
 
     .exit_icon {
       width: 18px;
       height: 18px;
       background-size: 18px 18px;
+    }
+
+    .detail_image{
+      max-width: 95%;
+      max-height: auto;
+
+    }
+
+    .promotion__subtitle{
+      
     }
   }
 

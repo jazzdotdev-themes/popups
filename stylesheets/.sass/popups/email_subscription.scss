@@ -106,13 +106,17 @@
       .email__input{ //Text field of the popup
         height: 40px;
         min-width: 100px;
-        // max-width: 300px;
       }
 
       .title{
         margin-top: 40px;
         word-wrap: break-word;
+        background: transparent;
         font-family: 'Bungee Shade', cursive;
+        text-shadow: 0 0 70px #ffd104;
+        position: relative;
+        z-index: 1;
+
       }
 
 

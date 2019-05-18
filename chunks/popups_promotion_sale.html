@@ -6,15 +6,22 @@
 
     <div promotion_popup >
       {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
-        HEy
         <label exit_icon for="{{popup.id}}">
         </label>
       {% endif %}
-      <p>
+      <img detail_image src="{{popup.image_url}}" alt="{{popup.title}}_image">
+      <h1 title>
         {{popup.title}}
+
+      </h1>
+      <h2 subtitle>
+        {{popup.subtitle}}
+
+      </h2>
+
+      <p>
       </p>
       <p>
-        {{popup.subtitle}}
       </p>
       <p>
         {{popup.message}}

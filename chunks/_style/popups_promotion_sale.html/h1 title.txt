@@ -1,0 +1,5 @@
+uppercase
+text-white
+bold
+text-5xl
+font-black

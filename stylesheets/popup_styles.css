@@ -2453,7 +2453,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup {
+.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .slow.promotion_popup {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
@@ -2740,16 +2740,26 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   .email_subscription_container .email_popup .main_content .title {
     margin-top: 40px;
     word-wrap: break-word;
-    font-family: 'Bungee Shade', cursive; }
+    background: transparent;
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: 0 0 70px #ffd104;
+    position: relative;
+    z-index: 1; }
+
+.popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup {
+  animation-duration: 1.5s; }
 
 .promotion_container .promotion_popup {
   max-width: 95%; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .promotion_container .promotion_popup {
-      max-width: 28rem; } }
+      max-width: 350px; } }
   .promotion_container .promotion_popup .exit_icon {
     width: 18px;
     height: 18px;
     background-size: 18px 18px; }
+  .promotion_container .promotion_popup .detail_image {
+    max-width: 95%;
+    max-height: auto; }
 
 /*# sourceMappingURL=popup_styles.css.map */
