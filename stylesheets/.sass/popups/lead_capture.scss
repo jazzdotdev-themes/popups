@@ -1,0 +1,29 @@
+@include popup_event_wrapper() {
+  .lead_capture__container {
+    .lead_capture__popup {
+      
+      @extend .animated ;
+      @extend .zoomIn ;
+
+    }
+  }
+
+}
+
+
+
+
+.lead_capture__container{
+  @extend %popup_container_centerer;
+  
+  .lead_capture__popup{
+    @extend %popup_element_centered;
+
+    .exit_icon {
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px;
+    }
+  
+  }
+}

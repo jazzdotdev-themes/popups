@@ -20,9 +20,10 @@
   @extend %popup_container_centerer;
 
   .email_popup{
+    @extend %popup_element_centered;
+
     background-color: #EBEAF2;
     border-radius: .5rem;    
-    pointer-events: all ;//Important
     max-height: 95%;
     max-width: 90%;
 

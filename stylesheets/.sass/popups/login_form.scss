@@ -12,15 +12,12 @@
   
 
   .popup__login_form {
+    @extend %popup_element_centered;
     max-width: 90%;
     color: $login_form__container_text;
-    position: relative;
-    pointer-events: all; //Important
     padding: 4.5rem;
-
     border-radius: 50%;
     background: $login_form__container_bg;
-
     transform: scale(1.2);
     
     .exit_icon.form_exit_icon {

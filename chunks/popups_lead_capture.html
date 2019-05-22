@@ -1,0 +1,17 @@
+{% extends "chunks/popups_component.html" %}
+
+{% block popup_content %}
+  {{ super() }}
+  <div lead_container>
+    <div popup_box>
+      {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
+        <label exit_icon for="{{popup.id}}">
+        </label>
+      {% endif %}
+      
+      LOREM
+    </div>
+
+  </div>
+
+{% endblock popup_content %}

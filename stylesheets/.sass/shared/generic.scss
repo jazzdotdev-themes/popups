@@ -9,8 +9,11 @@
   justify-content: center;
   align-items: center;
 }
-%popup_generic{
+%popup_element_centered{
+  pointer-events: all;
+}
 
+%popup_generic{
   position: fixed;
 }
 
