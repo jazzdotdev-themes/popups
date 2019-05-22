@@ -1,14 +1,11 @@
-.popup_control_checkbox:checked+.popup__container {
-  
+@include popup_event_wrapper() {
   .form__container {
     .popup__login_form {
       @extend .animated;
       @extend .zoomIn;
-    }
-
+    }  
   }
 }
-
 
 .form__container{
   @extend %popup_container_centerer;

@@ -1,11 +1,9 @@
-.popup_control_checkbox:checked+.popup__container {
-
+@include popup_event_wrapper() {
   .popup__announcement__container{
     .popup__announcement{
       @extend .animated ;
       @extend .fadeInDown ;
     }
-
   }
 }
 

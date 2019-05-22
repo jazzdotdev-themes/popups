@@ -1,21 +1,18 @@
-.popup_control_checkbox:checked+.popup__container {
-  
+@include popup_event_wrapper() {
   .email_subscription_container {
     .email_popup {
       @extend .animated ;
       @extend .zoomIn ;
       @extend .slow ;
-
+  
       .slide_in_container{
         @extend .animated ;
         @extend .slideInLeft ;
         @extend .slow ;
         animation-delay: 0.5s;
-        animation-timing-function: ease;
-              
+        animation-timing-function: ease;              
       }
     }
-
   }
 }
 

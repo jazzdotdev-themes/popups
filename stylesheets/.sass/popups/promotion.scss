@@ -1,15 +1,13 @@
-.popup_control_checkbox:checked+.popup__container {  
+@include popup_event_wrapper(){
   .promotion_container {
     .promotion_popup {
       @extend .animated ;
       @extend .fadeInLeft ;
-      // @extend .slow ;
-      animation-duration: 1.5s;
-
+      animation-duration: 1.5s;  
     }
-
   }
 }
+
 
 
 .promotion_container{

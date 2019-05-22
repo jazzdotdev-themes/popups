@@ -6,6 +6,13 @@
   visibility: visible;
 }
 
+@mixin popup_event_wrapper() {
+  .popup_control_checkbox:checked+.popup__container{
+    // popup classes to react on click go here
+    @content;
+  }
+}
+
 
 .popup__container {
   position: absolute;
