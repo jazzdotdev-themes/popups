@@ -1,0 +1,4 @@
+flex
+justify-center
+w-full
+lead_image_container

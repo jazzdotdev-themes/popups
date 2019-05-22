@@ -1,0 +1,4 @@
+bg-white
+relative
+w-full
+h-full

@@ -1,5 +1,7 @@
 lead_capture__popup
-bg-white
 h-screen
 w-1/2
 relative
+
+bg-orange-600
+p-3

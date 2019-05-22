@@ -4,6 +4,7 @@
       
       @extend .animated ;
       @extend .zoomIn ;
+      animation-duration: 1.5s;
 
     }
   }
@@ -23,6 +24,11 @@
       width: 18px;
       height: 18px;
       background-size: 18px 18px;
+    }
+    .lead_image_container{
+      height: 50%;
+      max-height: 50%;
+      object-fit: contain;
     }
   
   }
