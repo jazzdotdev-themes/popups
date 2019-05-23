@@ -51,3 +51,32 @@
     @content;
   }
 }
+
+
+@mixin seamless_scroll($color) {       
+  //Scrollbar options
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px;
+
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba($color, 0.55);
+    border-radius: 10px;
+
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba($color, 0.85);
+
+  }  
+  
+}

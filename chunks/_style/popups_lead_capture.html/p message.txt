@@ -1,0 +1,4 @@
+text-gray-600
+mt-2
+mb-2
+text-sm

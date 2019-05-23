@@ -23,3 +23,12 @@
 .text-red-bright{
   color: #DD0200;
 }
+
+.seamless_scrollbar{
+  &.gray_bar{
+    @include seamless_scroll(#adadad);
+  }
+  &.black_bar {
+    @include seamless_scroll(#000000);
+  }
+}

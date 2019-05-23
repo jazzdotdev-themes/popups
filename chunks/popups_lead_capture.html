@@ -4,31 +4,40 @@
   {{ super() }}
   <div lead_container>
     <div popup_box>
-      <div border_container>
+      <div main_container>
 
         {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
           <label exit_icon for="{{popup.id}}">
           </label>
         {% endif %}
+        
+        <div title_container>
+          <h1 title_popup>
+            {{popup.title}}
+          </h1>
+        </div>
 
-        <h1>
-          {{popup.title}}
-        </h1>
         <div image_container>
           <img lead_image src="{{popup.image_url}}" alt="{{popup.title}}">
 
         </div>
-        <h2>
-          {{popup.subtitle}}
-        </h2>
-        <p>
-          {{popup.message}}
-        </p>
-  
-        <input type="text"> 
-        <button>
-          {{popup.submit_button_text}}
-        </button>
+        <div bottom_container>
+          
+          <h2 subtitle>
+            {{popup.subtitle}}
+          </h2>
+          <p message>
+            {{popup.message}}
+          </p>
+          <form lead_form action="">
+            <input email_field type="text" placeholder="Your Email"> 
+            <button submit_button>
+              {{popup.submit_button_text}}
+            </button>
+          </form>
+
+
+        </div>
 
       </div>
 

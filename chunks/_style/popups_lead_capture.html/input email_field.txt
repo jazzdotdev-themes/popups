@@ -1,0 +1,13 @@
+bg-gray-300
+p-2
+mr-2
+
+appearance-none
+flex-grow
+
+
+border-solid
+border-1
+focus:bg-gray-100
+focus:outline-none 
+focus:border-gray-700

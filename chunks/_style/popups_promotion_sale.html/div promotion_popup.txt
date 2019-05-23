@@ -12,3 +12,6 @@ m-0
 bg-blue-900
 text-center
 font-sans
+
+seamless_scrollbar
+gray_bar

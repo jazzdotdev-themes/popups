@@ -1,0 +1,5 @@
+text-white
+uppercase
+font-bold
+text-xl
+m-1

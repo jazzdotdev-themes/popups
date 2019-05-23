@@ -7,9 +7,10 @@
 @import 'icons/icon_data';
 
 // Shared styles among popups
-@import 'shared/generic';
 @import 'shared/mixins';
+@import 'shared/generic';
 @import 'shared/animate';
+@import 'shared/animations';
 @import 'shared/popup_container';
 
 // Popups

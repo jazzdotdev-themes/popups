@@ -1,0 +1,7 @@
+bg-black
+pt-4
+px-8
+pb-6
+bottom-0
+flex-1
+text-center

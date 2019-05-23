@@ -11,14 +11,17 @@
 
 }
 
-
-
-
 .lead_capture__container{
   @extend %popup_container_centerer;
   
   .lead_capture__popup{
     @extend %popup_element_centered;
+    
+    max-width: 95%;
+
+    @include screen_md(){
+      max-width: 50%;
+    }
 
     .exit_icon {
       width: 18px;

@@ -41,6 +41,37 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
 .text-red-bright {
   color: #DD0200; }
 
+.seamless_scrollbar.gray_bar {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .seamless_scrollbar.gray_bar::-webkit-scrollbar {
+    width: 5px; }
+  .seamless_scrollbar.gray_bar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px; }
+  .seamless_scrollbar.gray_bar::-webkit-scrollbar-thumb {
+    background: rgba(173, 173, 173, 0.55);
+    border-radius: 10px; }
+  .seamless_scrollbar.gray_bar::-webkit-scrollbar-thumb:hover {
+    background: rgba(173, 173, 173, 0.85); }
+.seamless_scrollbar.black_bar {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .seamless_scrollbar.black_bar::-webkit-scrollbar {
+    width: 5px; }
+  .seamless_scrollbar.black_bar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px; }
+  .seamless_scrollbar.black_bar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px; }
+  .seamless_scrollbar.black_bar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.85); }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2751,21 +2782,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
 
 .promotion_container .promotion_popup {
   max-width: 95%;
-  overflow-y: scroll;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */ }
-  .promotion_container .promotion_popup::-webkit-scrollbar {
-    width: 5px; }
-  .promotion_container .promotion_popup::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 15px; }
-  .promotion_container .promotion_popup::-webkit-scrollbar-thumb {
-    background: rgba(173, 173, 173, 0.55);
-    border-radius: 10px; }
-  .promotion_container .promotion_popup::-webkit-scrollbar-thumb:hover {
-    background: rgba(173, 173, 173, 0.85); }
+  overflow-y: scroll; }
   @media (min-width: 576px) {
     .promotion_container .promotion_popup {
       max-width: 350px; } }
@@ -2785,13 +2802,18 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
 .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
   animation-duration: 1.5s; }
 
-.lead_capture__container .lead_capture__popup .exit_icon {
-  width: 18px;
-  height: 18px;
-  background-size: 18px 18px; }
-.lead_capture__container .lead_capture__popup .lead_image_container {
-  height: 50%;
-  max-height: 50%;
-  object-fit: contain; }
+.lead_capture__container .lead_capture__popup {
+  max-width: 95%; }
+  @media (min-width: 768px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 50%; } }
+  .lead_capture__container .lead_capture__popup .exit_icon {
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px; }
+  .lead_capture__container .lead_capture__popup .lead_image_container {
+    height: 50%;
+    max-height: 50%;
+    object-fit: contain; }
 
 /*# sourceMappingURL=popup_styles.css.map */
