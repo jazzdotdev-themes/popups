@@ -2,5 +2,5 @@ lead_capture__popup
 h-screen
 relative
 
-bg-orange-600
+bg-orange-500
 p-3

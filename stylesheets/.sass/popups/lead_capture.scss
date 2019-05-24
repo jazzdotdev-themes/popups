@@ -18,8 +18,13 @@
     @extend %popup_element_centered;
     
     max-width: 95%;
-
+    @include screen_sm() {
+      max-width: 95%;
+    }
     @include screen_md(){
+      max-width: 65%;
+    }
+    @include screen_lg() {
       max-width: 50%;
     }
 
@@ -30,8 +35,11 @@
     }
     .lead_image_container{
       height: 50%;
-      max-height: 50%;
-      object-fit: contain;
+      // max-height: 50%;
+      // object-fit: cover;
+    }
+    .email_input{
+      min-width: 10px;
     }
   
   }

@@ -32,3 +32,7 @@
     @include seamless_scroll(#000000);
   }
 }
+
+.bg_slow_change{
+  transition: background-color .4s;
+}

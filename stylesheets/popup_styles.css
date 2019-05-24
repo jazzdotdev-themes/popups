@@ -72,6 +72,9 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   .seamless_scrollbar.black_bar::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.85); }
 
+.bg_slow_change {
+  transition: background-color .4s; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2804,7 +2807,13 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
 
 .lead_capture__container .lead_capture__popup {
   max-width: 95%; }
+  @media (min-width: 576px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 95%; } }
   @media (min-width: 768px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 65%; } }
+  @media (min-width: 992px) {
     .lead_capture__container .lead_capture__popup {
       max-width: 50%; } }
   .lead_capture__container .lead_capture__popup .exit_icon {
@@ -2812,8 +2821,8 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     height: 18px;
     background-size: 18px 18px; }
   .lead_capture__container .lead_capture__popup .lead_image_container {
-    height: 50%;
-    max-height: 50%;
-    object-fit: contain; }
+    height: 50%; }
+  .lead_capture__container .lead_capture__popup .email_input {
+    min-width: 10px; }
 
 /*# sourceMappingURL=popup_styles.css.map */
