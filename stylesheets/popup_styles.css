@@ -2821,7 +2821,8 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     height: 18px;
     background-size: 18px 18px; }
   .lead_capture__container .lead_capture__popup .lead_image_container {
-    height: 50%; }
+    height: 50%;
+    min-height: 200px; }
   .lead_capture__container .lead_capture__popup .email_input {
     min-width: 10px; }
 
