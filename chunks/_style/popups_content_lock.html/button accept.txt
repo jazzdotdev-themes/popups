@@ -1,0 +1,11 @@
+rounded
+py-3
+px-12
+m-1
+border-2
+bg-green-500
+border-green-500
+hover:bg-white
+uppercase
+font-bold
+bg_slow_change

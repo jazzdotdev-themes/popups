@@ -1,0 +1,4 @@
+ml-6
+mr-6
+mt-16
+detail_image

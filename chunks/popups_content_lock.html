@@ -1,0 +1,30 @@
+{% extends "chunks/popups_component.html" %}
+
+{% block popup_content %}
+{{ super() }}
+<div lock_container>
+
+    <div lock_popup>
+        {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
+        <label exit_icon for="{{popup.id}}">
+        </label>
+        {% endif %}
+        <img detail_image src="{{popup.image_url}}" alt="{{popup.title}}_image">
+        <h1 title>
+            {{popup.title}}
+
+        </h1>
+        <h2 subtitle>
+            {{popup.message}}
+
+        </h2>
+
+        <form action="">
+            <button accept > Yes </button>
+            <button deny > No </button>
+        </form>
+    </div>
+
+</div>
+
+{% endblock popup_content %}

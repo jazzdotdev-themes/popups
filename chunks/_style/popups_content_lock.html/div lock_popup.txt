@@ -1,6 +1,7 @@
-promotion_popup
-p-8
+lock_popup
+
 popup__box
+p-8
 
 fixed
 top-0
@@ -8,9 +9,10 @@ left-0
 h-screen
 m-0
 
-bg-blue-900
 text-center
 font-sans
 
 seamless_scrollbar
 gray_bar
+
+bg-white

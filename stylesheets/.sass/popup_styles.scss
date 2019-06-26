@@ -13,10 +13,9 @@
 @import 'shared/popup_container';
 
 // Popups
-@import 'popups/announcement';
-@import 'popups/login_form';
-@import 'popups/email_subscription';
 @import 'popups/promotion';
+@import 'popups/login_form';
 @import 'popups/lead_capture';
-
- 
+@import 'popups/email_subscription';
+@import 'popups/announcement';
+@import 'popups/content_lock';

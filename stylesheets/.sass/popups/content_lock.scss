@@ -1,0 +1,40 @@
+@include popup_event_wrapper() {
+    .lock_container {
+        .lock_popup {
+            @extend .animated;
+            @extend .fadeInLeft;
+            animation-duration: 1.5s;
+        }
+    }
+}
+
+.lock_container{
+    
+    .lock_popup{
+        // only in the smallest sizes
+        max-width: 95%;
+        overflow-y: scroll;
+
+        @include screen_sm() {
+            //from 576px screen size or bigger
+            max-width: 350px;
+        }
+
+        .detail_image {
+            max-width: 95%;
+            max-height: auto;
+
+        }
+        .exit_icon {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+        }
+
+        .title {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
+}

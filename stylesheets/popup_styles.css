@@ -22,7 +22,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   height: 24px;
   background-size: 24px 24px; }
 
-.form__container, .email_subscription_container, .lead_capture__container {
+.form__container, .lead_capture__container, .email_subscription_container {
   top: 0;
   pointer-events: none;
   width: 100%;
@@ -32,7 +32,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   justify-content: center;
   align-items: center; }
 
-.form__container .popup__login_form, .email_subscription_container .email_popup, .lead_capture__container .lead_capture__popup {
+.form__container .popup__login_form, .lead_capture__container .lead_capture__popup, .email_subscription_container .email_popup {
   pointer-events: all; }
 
 .bg-yellow-bright {
@@ -1042,7 +1042,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-.fadeInLeft, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup {
+.fadeInLeft, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup, .popup_control_checkbox:checked + .popup__container .lock_container .lock_popup {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
 
@@ -1366,7 +1366,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
-.animated.flip, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .flip.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .flip.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .flip.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .flip.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .flip.lead_capture__popup {
+.animated.flip, .popup_control_checkbox:checked + .popup__container .promotion_container .flip.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .flip.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .flip.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .flip.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .flip.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .flip.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .flip.lock_popup {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2026,7 +2026,7 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
-.zoomIn, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
+.zoomIn, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn; }
 
@@ -2452,54 +2452,54 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
+.animated, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .lock_popup {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .infinite.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .infinite.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .infinite.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .infinite.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .infinite.lead_capture__popup {
+.animated.infinite, .popup_control_checkbox:checked + .popup__container .promotion_container .infinite.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .infinite.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .infinite.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .infinite.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .infinite.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .infinite.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .infinite.lock_popup {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-1s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-1s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-1s.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-1s.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-1s.lead_capture__popup {
+.animated.delay-1s, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-1s.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .delay-1s.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-1s.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-1s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-1s.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-1s.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .delay-1s.lock_popup {
   -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
-.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-2s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-2s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-2s.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-2s.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-2s.lead_capture__popup {
+.animated.delay-2s, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-2s.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .delay-2s.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-2s.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-2s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-2s.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-2s.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .delay-2s.lock_popup {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
-.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-3s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-3s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-3s.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-3s.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-3s.lead_capture__popup {
+.animated.delay-3s, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-3s.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .delay-3s.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-3s.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-3s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-3s.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-3s.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .delay-3s.lock_popup {
   -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
-.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-4s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-4s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-4s.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-4s.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-4s.lead_capture__popup {
+.animated.delay-4s, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-4s.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .delay-4s.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-4s.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-4s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-4s.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-4s.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .delay-4s.lock_popup {
   -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
-.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .delay-5s.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-5s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-5s.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-5s.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-5s.lead_capture__popup {
+.animated.delay-5s, .popup_control_checkbox:checked + .popup__container .promotion_container .delay-5s.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .delay-5s.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .delay-5s.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .delay-5s.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .delay-5s.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .delay-5s.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .delay-5s.lock_popup {
   -webkit-animation-delay: 5s;
   animation-delay: 5s; }
 
-.animated.fast, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .fast.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .fast.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .fast.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .fast.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .fast.lead_capture__popup {
+.animated.fast, .popup_control_checkbox:checked + .popup__container .promotion_container .fast.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .fast.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .fast.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .fast.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .fast.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .fast.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .fast.lock_popup {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
 
-.animated.faster, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .faster.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .faster.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .faster.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .faster.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .faster.lead_capture__popup {
+.animated.faster, .popup_control_checkbox:checked + .popup__container .promotion_container .faster.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .faster.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .faster.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .faster.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .faster.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .faster.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .faster.lock_popup {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms; }
 
-.animated.slow, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .slow.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .slow.lead_capture__popup {
+.animated.slow, .popup_control_checkbox:checked + .popup__container .promotion_container .slow.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .slow.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .slow.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slow.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .slow.lock_popup {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.slower, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .slower.popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .slower.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slower.slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .slower.promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .slower.lead_capture__popup {
+.animated.slower, .popup_control_checkbox:checked + .popup__container .promotion_container .slower.promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .slower.popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .slower.lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .slower.email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slower.slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .slower.popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .slower.lock_popup {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
 @media (prefers-reduced-motion) {
-  .animated, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
+  .animated, .popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup, .popup_control_checkbox:checked + .popup__container .form__container .popup__login_form, .popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup, .popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container, .popup_control_checkbox:checked + .popup__container .popup__announcement__container .popup__announcement, .popup_control_checkbox:checked + .popup__container .lock_container .lock_popup {
     -webkit-animation: unset !important;
     animation: unset !important;
     -webkit-transition: none !important;
@@ -2537,8 +2537,166 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
       background-color: rgba(255, 255, 255, 0.5); }
     .popup__container .popup__shade.colorless {
       background-color: transparent; }
-  .popup__container .popup__box, .popup__container .form__container, .popup__container .email_subscription_container, .popup__container .lead_capture__container {
+  .popup__container .popup__box, .popup__container .form__container, .popup__container .lead_capture__container, .popup__container .email_subscription_container {
     z-index: 50; }
+
+.popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup {
+  animation-duration: 1.5s; }
+
+.promotion_container .promotion_popup {
+  max-width: 95%;
+  overflow-y: scroll; }
+  @media (min-width: 640px) {
+    .promotion_container .promotion_popup {
+      max-width: 350px; } }
+  .promotion_container .promotion_popup .exit_icon {
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px; }
+  .promotion_container .promotion_popup .detail_image {
+    max-width: 95%;
+    max-height: auto; }
+  .promotion_container .promotion_popup .promotion__title {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+  .promotion_container .promotion_popup .promotion__subtitle {
+    text-shadow: 1px 1px 5px #000;
+    font-size: 6.5rem; }
+
+.form__container .popup__login_form {
+  max-width: 90%;
+  color: #000;
+  padding: 4.5rem;
+  border-radius: 50%;
+  background: #feed3e;
+  transform: scale(1.2); }
+  .form__container .popup__login_form .exit_icon.form_exit_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer; }
+  .form__container .popup__login_form .form_head {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
+  .form__container .popup__login_form .checkbox__remember_user {
+    size: .8rem; }
+  .form__container .popup__login_form .label__remember_user, .form__container .popup__login_form .forgotten__password {
+    font-size: .8rem;
+    color: #1a1a1a; }
+    .form__container .popup__login_form .label__remember_user:hover, .form__container .popup__login_form .forgotten__password:hover {
+      color: #000; }
+  .form__container .popup__login_form .forgotten__password {
+    margin-top: 5px; }
+  .form__container .popup__login_form .login_button {
+    background-color: #000;
+    color: #fff;
+    transition: .5s transform; }
+    .form__container .popup__login_form .login_button:hover {
+      transform: translateY(10px); }
+
+.popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
+  animation-duration: 1.5s; }
+
+.lead_capture__container .lead_capture__popup {
+  max-width: 95%; }
+  @media (min-width: 640px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 95%; } }
+  @media (min-width: 768px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 65%; } }
+  @media (min-width: 1024px) {
+    .lead_capture__container .lead_capture__popup {
+      max-width: 50%; } }
+  .lead_capture__container .lead_capture__popup .exit_icon {
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px; }
+  .lead_capture__container .lead_capture__popup .lead_image_container {
+    height: 50%;
+    min-height: 200px; }
+  .lead_capture__container .lead_capture__popup .email_input {
+    min-width: 10px; }
+
+.popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
+  animation-delay: 0.5s;
+  animation-timing-function: ease; }
+
+.email_subscription_container .email_popup {
+  background-color: #EBEAF2;
+  border-radius: .5rem;
+  max-height: 95%;
+  max-width: 90%;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  @media (min-width: 768px) {
+    .email_subscription_container .email_popup {
+      max-width: 800px;
+      max-height: 500; } }
+  @media (min-width: 640px) {
+    .email_subscription_container .email_popup {
+      overflow-y: scroll; } }
+  @media (min-width: 768px) {
+    .email_subscription_container .email_popup {
+      overflow-y: unset; } }
+  @media (min-width: 1024px) {
+    .email_subscription_container .email_popup {
+      overflow-y: unset; } }
+  @media (min-width: 1280px) {
+    .email_subscription_container .email_popup {
+      overflow-y: unset; } }
+  .email_subscription_container .email_popup .exit_icon {
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px; }
+  .email_subscription_container .email_popup .slide_in_container {
+    max-width: 100%;
+    height: auto;
+    width: 100%; }
+    @media (min-width: 640px) {
+      .email_subscription_container .email_popup .slide_in_container {
+        max-width: 100%;
+        height: auto;
+        width: 100%; } }
+    @media (min-width: 768px) {
+      .email_subscription_container .email_popup .slide_in_container {
+        max-width: 100%;
+        height: auto;
+        width: 400px; } }
+    @media (min-width: 1024px) {
+      .email_subscription_container .email_popup .slide_in_container {
+        max-width: 512px;
+        max-height: 512px;
+        height: auto;
+        width: 450px; } }
+    @media (min-width: 1280px) {
+      .email_subscription_container .email_popup .slide_in_container {
+        max-width: 512px;
+        max-height: 512px;
+        height: auto;
+        width: 450px; } }
+    .email_subscription_container .email_popup .slide_in_container .image_slide {
+      object-fit: contain; }
+  .email_subscription_container .email_popup .main_content .email__input {
+    height: 40px;
+    min-width: 100px; }
+  .email_subscription_container .email_popup .main_content .title {
+    margin-top: 40px;
+    word-wrap: break-word;
+    background: transparent;
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: 0 0 70px #ffd104;
+    position: relative;
+    z-index: 1; }
 
 .popup__announcement__container .popup__announcement {
   width: 98%;
@@ -2643,6 +2801,31 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+@-o-keyframes shakeSideBySide {
+  0% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%,60% {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -o-transform: translateX(8px);
+    transform: translateX(8px); }
+  40%,80% {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    -ms-transform: translateX(-8px);
+    -o-transform: translateX(-8px);
+    transform: translateX(-8px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); } }
 @keyframes shakeSideBySide {
   0% {
     -webkit-transform: translateX(0px);
@@ -2668,162 +2851,23 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
-.form__container .popup__login_form {
-  max-width: 90%;
-  color: #000;
-  padding: 4.5rem;
-  border-radius: 50%;
-  background: #feed3e;
-  transform: scale(1.2); }
-  .form__container .popup__login_form .exit_icon.form_exit_icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer; }
-  .form__container .popup__login_form .form_head {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none; }
-  .form__container .popup__login_form .checkbox__remember_user {
-    size: .8rem; }
-  .form__container .popup__login_form .label__remember_user, .form__container .popup__login_form .forgotten__password {
-    font-size: .8rem;
-    color: #1a1a1a; }
-    .form__container .popup__login_form .label__remember_user:hover, .form__container .popup__login_form .forgotten__password:hover {
-      color: #000; }
-  .form__container .popup__login_form .forgotten__password {
-    margin-top: 5px; }
-  .form__container .popup__login_form .login_button {
-    background-color: #000;
-    color: #fff;
-    transition: .5s transform; }
-    .form__container .popup__login_form .login_button:hover {
-      transform: translateY(10px); }
-
-.popup_control_checkbox:checked + .popup__container .email_subscription_container .email_popup .slide_in_container {
-  animation-delay: 0.5s;
-  animation-timing-function: ease; }
-
-.email_subscription_container .email_popup {
-  background-color: #EBEAF2;
-  border-radius: .5rem;
-  max-height: 95%;
-  max-width: 90%;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: scroll; }
-  @media (min-width: 768px) {
-    .email_subscription_container .email_popup {
-      max-width: 800px;
-      max-height: 500; } }
-  @media (min-width: 576px) {
-    .email_subscription_container .email_popup {
-      overflow-y: scroll; } }
-  @media (min-width: 768px) {
-    .email_subscription_container .email_popup {
-      overflow-y: unset; } }
-  @media (min-width: 992px) {
-    .email_subscription_container .email_popup {
-      overflow-y: unset; } }
-  @media (min-width: 1200px) {
-    .email_subscription_container .email_popup {
-      overflow-y: unset; } }
-  .email_subscription_container .email_popup .exit_icon {
-    height: 16px;
-    width: 16px;
-    background-size: 16px 16px; }
-  .email_subscription_container .email_popup .slide_in_container {
-    max-width: 100%;
-    height: auto;
-    width: 100%; }
-    @media (min-width: 576px) {
-      .email_subscription_container .email_popup .slide_in_container {
-        max-width: 100%;
-        height: auto;
-        width: 100%; } }
-    @media (min-width: 768px) {
-      .email_subscription_container .email_popup .slide_in_container {
-        max-width: 100%;
-        height: auto;
-        width: 400px; } }
-    @media (min-width: 992px) {
-      .email_subscription_container .email_popup .slide_in_container {
-        max-width: 512px;
-        max-height: 512px;
-        height: auto;
-        width: 450px; } }
-    @media (min-width: 1200px) {
-      .email_subscription_container .email_popup .slide_in_container {
-        max-width: 512px;
-        max-height: 512px;
-        height: auto;
-        width: 450px; } }
-    .email_subscription_container .email_popup .slide_in_container .image_slide {
-      object-fit: contain; }
-  .email_subscription_container .email_popup .main_content .email__input {
-    height: 40px;
-    min-width: 100px; }
-  .email_subscription_container .email_popup .main_content .title {
-    margin-top: 40px;
-    word-wrap: break-word;
-    background: transparent;
-    font-family: 'Bungee Shade', cursive;
-    text-shadow: 0 0 70px #ffd104;
-    position: relative;
-    z-index: 1; }
-
-.popup_control_checkbox:checked + .popup__container .promotion_container .promotion_popup {
+.popup_control_checkbox:checked + .popup__container .lock_container .lock_popup {
   animation-duration: 1.5s; }
 
-.promotion_container .promotion_popup {
+.lock_container .lock_popup {
   max-width: 95%;
   overflow-y: scroll; }
-  @media (min-width: 576px) {
-    .promotion_container .promotion_popup {
+  @media (min-width: 640px) {
+    .lock_container .lock_popup {
       max-width: 350px; } }
-  .promotion_container .promotion_popup .exit_icon {
-    width: 18px;
-    height: 18px;
-    background-size: 18px 18px; }
-  .promotion_container .promotion_popup .detail_image {
+  .lock_container .lock_popup .detail_image {
     max-width: 95%;
     max-height: auto; }
-  .promotion_container .promotion_popup .promotion__title {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
-  .promotion_container .promotion_popup .promotion__subtitle {
-    text-shadow: 1px 1px 5px #000;
-    font-size: 6.5rem; }
-
-.popup_control_checkbox:checked + .popup__container .lead_capture__container .lead_capture__popup {
-  animation-duration: 1.5s; }
-
-.lead_capture__container .lead_capture__popup {
-  max-width: 95%; }
-  @media (min-width: 576px) {
-    .lead_capture__container .lead_capture__popup {
-      max-width: 95%; } }
-  @media (min-width: 768px) {
-    .lead_capture__container .lead_capture__popup {
-      max-width: 65%; } }
-  @media (min-width: 992px) {
-    .lead_capture__container .lead_capture__popup {
-      max-width: 50%; } }
-  .lead_capture__container .lead_capture__popup .exit_icon {
+  .lock_container .lock_popup .exit_icon {
     width: 18px;
     height: 18px;
     background-size: 18px 18px; }
-  .lead_capture__container .lead_capture__popup .lead_image_container {
-    height: 50%;
-    min-height: 200px; }
-  .lead_capture__container .lead_capture__popup .email_input {
-    min-width: 10px; }
+  .lock_container .lock_popup .title {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=popup_styles.css.map */
