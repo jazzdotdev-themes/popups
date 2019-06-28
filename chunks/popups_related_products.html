@@ -5,29 +5,34 @@
 
     <div related_container>
         <div related_popup>
-            
-            <img main_image src="{{popup.image_url}}" alt="{{popup.title}}_image">
-            
-            <form action="">
-                <button submit_button type="submit"> 
-                    {{popup.submit_button_text}}
-                </button>
-            </form>
+            <div body>
+                {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
+                    <label exit_icon for="{{popup.id}}">
+                    </label>
+                {% endif %}
+                <div submit__image>
+                    <img main_image src="{{popup.image_url}}" alt="{{popup.title}}_image">
+                    <form action="">
+                        <button submit_button type="submit"> 
+                            {{popup.submit_button_text}}
+                        </button>
+                    </form>
 
-            {% if popup.close_behaviour == "shade_exit_icon" or popup.close_behaviour == "exit_icon"  %}
-                <label exit_icon for="{{popup.id}}">
-                </label>
-            {% endif %}
+                </div>
+                <div text_content>
+                    <h1 title>
+                        {{popup.title}}
+                    </h1>
+                    <h2 subtitle>
+                        {{popup.subtitle}}
+                    </h2>
+                    <p message>
+                        {{popup.message}}
+                    </p>
 
-            <h1 title>
-                {{popup.title}}
-            </h1>
-            <h2 subtitle>
-                {{popup.subtitle}}
-            </h2>
-            <p message>
-                {{popup.message}}
-            </p>
+                </div>
+
+            </div>
 
 
         </div>

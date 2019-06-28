@@ -1,0 +1,7 @@
+bg-black
+text-white
+slow_transition
+p-4
+text-2xl
+hover:bg-white
+hover:text-black

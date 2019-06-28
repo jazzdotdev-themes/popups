@@ -1,3 +1,4 @@
 related__popup
-rounded
-bg-white
+bg-black
+p-3
+relative
