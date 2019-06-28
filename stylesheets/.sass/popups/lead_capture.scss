@@ -28,9 +28,7 @@
       max-width: 50%;
     }
     .exit_icon {
-      width: 18px;
-      height: 18px;
-      background-size: 18px 18px;
+      @include exit_icon_size(18px);
     }
     .lead_image_container{
       height: 50%;

@@ -1,0 +1,20 @@
+@include popup_event_wrapper() {
+    .related__container {
+        .related__popup {
+            @extend .animated ;
+            @extend .fadeIn ;
+            @extend .slow ;
+        }
+    }
+
+}
+
+
+.related__container{
+    @extend %popup_container_centerer;
+
+    .related__popup{
+        @extend %popup_element_centered;
+
+    }
+}

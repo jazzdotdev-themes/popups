@@ -85,3 +85,9 @@
   }  
   
 }
+
+@mixin exit_icon_size($value) {
+  width: $value;
+  height: $value;
+  background-size: $value $value;
+}

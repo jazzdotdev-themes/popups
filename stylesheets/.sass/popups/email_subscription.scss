@@ -54,10 +54,7 @@
 
     }
     .exit_icon{
-      height: 16px;
-      width: 16px;
-      background-size: 16px 16px;
-
+      @include exit_icon_size(16px);
     }
 
 
