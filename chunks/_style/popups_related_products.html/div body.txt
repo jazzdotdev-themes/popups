@@ -1,4 +1,1 @@
-bg-white
-border-gray-500
-border-3
-flex
+

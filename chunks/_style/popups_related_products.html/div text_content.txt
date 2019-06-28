@@ -1,0 +1,6 @@
+md:w-1/2
+w-full
+flex
+flex-col
+text-center
+p-6

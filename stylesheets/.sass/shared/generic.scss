@@ -40,3 +40,29 @@
 .slow_transition{
   transition: .4s;
 }
+
+.object_cover{
+  object-fit: cover;
+}
+
+.object_contain {
+  object-fit: contain;
+}
+.object-fill{
+  object-fit: fill;
+}
+
+.responsive-h{
+  height: 100%;
+  width: auto;
+}
+
+.responsive-w{
+  height: auto;
+  width: 100%;
+}
+
+.img_fluid{
+  max-width: 100%;
+  height: auto;
+}

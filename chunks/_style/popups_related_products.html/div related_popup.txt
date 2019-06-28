@@ -1,4 +1,12 @@
 related__popup
-bg-black
-p-3
 relative
+font-sans
+related_height
+
+bg-white
+border-black
+border-8
+flex
+
+md:flex-row
+flex-col-reverse

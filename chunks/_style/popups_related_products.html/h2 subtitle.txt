@@ -1,0 +1,4 @@
+text-4xl
+font-black
+uppercase
+my-4

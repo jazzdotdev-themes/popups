@@ -78,6 +78,27 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
 .slow_transition {
   transition: .4s; }
 
+.object_cover {
+  object-fit: cover; }
+
+.object_contain {
+  object-fit: contain; }
+
+.object-fill {
+  object-fit: fill; }
+
+.responsive-h {
+  height: 100%;
+  width: auto; }
+
+.responsive-w {
+  height: auto;
+  width: 100%; }
+
+.img_fluid {
+  max-width: 100%;
+  height: auto; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -2872,5 +2893,27 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     background-size: 18px 18px; }
   .lock_container .lock_popup .title {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+
+.related__container .related_height {
+  max-height: 90%;
+  max-width: 90%; }
+  @media (min-width: 768px) {
+    .related__container .related_height {
+      max-height: 60%; } }
+.related__container .related__popup {
+  position: relative;
+  background-color: #fff; }
+  .related__container .related__popup .image {
+    object-fit: cover;
+    height: 40%;
+    width: 100%;
+    max-height: 200px; }
+    @media (min-width: 768px) {
+      .related__container .related__popup .image {
+        height: 80%;
+        max-width: 512px;
+        max-height: 512px; } }
+  .related__container .related__popup .button_form {
+    height: 20%; }
 
 /*# sourceMappingURL=popup_styles.css.map */
