@@ -16,6 +16,9 @@ fields = {
   image_url = {
     type = "string"
   },
+  secondary_image_url = {
+    type = "string"
+  },
   cancel_message = {
     type = "string"
   },
