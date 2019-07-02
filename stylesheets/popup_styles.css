@@ -2895,17 +2895,14 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
 
 .related__container .related_height {
-  max-height: 90%;
+  max-height: 95%;
   max-width: 90%; }
-  @media (min-width: 768px) {
-    .related__container .related_height {
-      max-height: 60%; } }
 .related__container .related__popup {
   position: relative;
   background-color: #fff; }
   .related__container .related__popup .image {
     object-fit: cover;
-    height: 40%;
+    height: 50%;
     width: 100%;
     max-height: 200px; }
     @media (min-width: 768px) {

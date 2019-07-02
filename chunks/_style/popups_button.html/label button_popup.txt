@@ -1,1 +1,3 @@
 {{popup.button.class_references}}
+
+cursor-pointer

@@ -10,3 +10,4 @@ flex
 
 md:flex-row
 flex-col-reverse
+overflow-y-scroll

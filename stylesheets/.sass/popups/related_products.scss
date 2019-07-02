@@ -14,12 +14,8 @@
     @extend %popup_container_centerer;
 
     .related_height{
-        max-height: 90%;
+        max-height: 95%;
         max-width: 90%;
-        @include screen_md(){
-            max-height: 60%;
-        }
-
     }
     .related__popup{
 
@@ -28,16 +24,10 @@
 
         @extend %popup_element_centered;
         
-        .submit__image{
-            // height: 50%;
-            // @include screen_md(){
-            //     height: 100%;
-            // }
-        }
         .image{
             object-fit: cover;
             
-            height: 40%;
+            height: 50%;
             width: 100%;
 
             max-height: 200px;

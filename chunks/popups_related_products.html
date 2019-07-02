@@ -21,6 +21,12 @@
             </div>
             
             <div text_content>
+                <div head_image>
+                    {% if popup.secondary_image_url %}
+                        <img image_small src="{{popup.secondary_image_url}}" alt="secondary_image">                    
+                    {% endif %}
+
+                </div>
                 <h1 title>
                     {{popup.title}}
                 </h1>
