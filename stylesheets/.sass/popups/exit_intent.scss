@@ -1,0 +1,13 @@
+@include popup_event_wrapper() {
+    .exit_intent_popup {
+        @extend .animated;
+        @extend .fadeIn;
+        animation-duration: .8s;
+    }
+}
+
+.exit_intent_popup{
+    .exit_icon {
+        @include exit_icon_size(28px);
+    }
+}

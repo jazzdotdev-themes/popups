@@ -1,0 +1,23 @@
+{% extends "chunks/popups_component.html" %}
+
+{% block popup_content %}
+{{ super() }}
+
+<div exit_intent_popup >
+    <label exit_icon for="{{popup.id}}">
+    </label>
+    <h1 title >
+        {{popup.title}}
+    </h1>
+    <h2 subtitle>
+        {{popup.subtitle}}
+    </h2>
+    <p message>
+        {{popup.message}}
+    </p>
+    <div image_container>
+        <img image src="{{popup.image_url}}" alt="{{popup.title}}">
+
+    </div>
+</div>
+{% endblock popup_content %}
