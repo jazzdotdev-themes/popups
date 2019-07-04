@@ -1,8 +1,10 @@
 exit_icon
-icon__black
+icon__white
+bg-black
 cursor-pointer
 absolute
 cursor-pointer
 top-0
 right-0
 m-3
+z_top

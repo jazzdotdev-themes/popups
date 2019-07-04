@@ -1,9 +1,12 @@
 exit_intent_popup
-bg-white
+bg-pink-600
 top-0
 right-0
 bottom-0
 left-0
-fixed
 popup__box
 p-0
+fixed
+flex
+flex-wrap
+font-sans

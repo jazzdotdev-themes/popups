@@ -1,0 +1,8 @@
+md:w-1/2
+w-full
+relative
+flex
+justify-center
+items-center
+p-4
+flex-col

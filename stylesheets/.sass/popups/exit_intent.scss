@@ -3,11 +3,20 @@
         @extend .animated;
         @extend .fadeIn;
         animation-duration: .8s;
+        .submit_button{
+            @extend .animated ;
+            @extend .slideInUp ;
+            animation-delay: .6s;
+        }
     }
 }
 
 .exit_intent_popup{
     .exit_icon {
         @include exit_icon_size(28px);
+    }
+
+    .z_top{
+        z-index: 50;
     }
 }

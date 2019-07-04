@@ -3,18 +3,26 @@
 {% block popup_content %}
 {{ super() }}
 
-<div exit_intent_popup >
+<div popup_exit_intent>
     <label exit_icon for="{{popup.id}}">
     </label>
-    <h1 title >
-        {{popup.title}}
-    </h1>
-    <h2 subtitle>
-        {{popup.subtitle}}
-    </h2>
-    <p message>
-        {{popup.message}}
-    </p>
+    <form submit action="">
+
+        <button submit_button>
+            {{popup.submit_button_text}}
+        </button>
+    </form>
+    <div text_content>
+        <h2 subtitle>
+            {{popup.subtitle}}
+        </h2>
+        <h1 title >
+            {{popup.title}}
+        </h1>
+        <p message>
+            {{popup.message}}
+        </p>
+    </div>
     <div image_container>
         <img image src="{{popup.image_url}}" alt="{{popup.title}}">
 

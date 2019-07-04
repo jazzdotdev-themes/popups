@@ -1,0 +1,5 @@
+text-center
+text-white
+font-hairline
+text-xl
+mt-4

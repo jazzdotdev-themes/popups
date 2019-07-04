@@ -1,0 +1,9 @@
+text-6xl
+text-pink-500
+bg-white
+py-0
+px-10
+mb-4
+mt-1
+thick_shadow
+capitalize

@@ -1,0 +1,11 @@
+relative
+py-2
+px-10
+pointer
+z_top
+submit_button
+bg-yellow-bright
+text-black
+hover:bg-black
+hover:text-white
+slow_transition
