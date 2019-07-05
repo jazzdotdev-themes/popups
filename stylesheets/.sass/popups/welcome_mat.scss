@@ -1,0 +1,15 @@
+@include popup_event_wrapper() {
+    .welcome_mat__popup{
+        @extend .animated;
+        @extend .fadeIn;
+        animation-duration: .8s;
+    }
+}
+
+.welcome_mat__popup{
+    .main_image {
+        height: 50%;
+        width: 50%;
+    }
+    
+}

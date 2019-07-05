@@ -1,0 +1,20 @@
+{% extends "chunks/popups_component.html" %}
+
+{% block popup_content %}
+    {{ super() }}
+    <div welcome_popup>
+        <label exit_icon for="{{popup.id}}">
+        </label>
+        <h1>{{popup.title}}</h1>
+        <h2>{{popup.subtitle}}</h2>
+        <img main_image src="{{popup.image_url}}">
+        <form submit action="">
+            <button submit_button type="submit">
+                {{popup.submit_button_text}}
+            </button>
+            <label not_interested for="{{popup.id}}">
+                {{popup.cancel_message}}
+            </label>
+        </form>
+    </div>
+{% endblock popup_content %}
