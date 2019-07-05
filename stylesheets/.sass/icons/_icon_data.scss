@@ -12,9 +12,8 @@ $icons_default_size: 24px;
 i,label{
   &.exit_icon {
     @include exit_icon_img("000000");
-    width: $icons_default_size;
-    height: $icons_default_size;
-    background-size: $icons_default_size $icons_default_size;
+    @include exit_icon_size($icons_default_size);
+
   }
 
 }
@@ -22,10 +21,8 @@ i,label{
 @each $color_name ,$value in $icons_colors {
   label,i{
     &.exit_icon.#{$color_name}{  
-      @include exit_icon_img($value);  
-      width: $icons_default_size;
-      height: $icons_default_size;
-      background-size: $icons_default_size $icons_default_size;
+      @include exit_icon_img($value);
+      @include exit_icon_size($icons_default_size);
     }
 
   }

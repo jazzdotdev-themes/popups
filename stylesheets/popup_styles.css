@@ -2929,16 +2929,17 @@ label.exit_icon.icon__grey, i.exit_icon.icon__grey {
   .popup_control_checkbox:checked + .popup__container .exit_intent_popup .submit_button {
     animation-delay: .6s; }
 
-.exit_intent_popup .exit_icon {
-  width: 28px;
-  height: 28px;
-  background-size: 28px 28px; }
+.exit_intent_popup label.exit_icon {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px; }
 
 .popup_control_checkbox:checked + .popup__container .welcome_mat__popup {
   animation-duration: .8s; }
 
-.welcome_mat__popup .main_image {
-  height: 50%;
-  width: 50%; }
+.welcome_mat__popup label.exit_icon {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px; }
 
 /*# sourceMappingURL=popup_styles.css.map */

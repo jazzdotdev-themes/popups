@@ -1,5 +1,5 @@
-exit_icon
 icon__black
+exit_icon
 absolute
 cursor-pointer
 top-0

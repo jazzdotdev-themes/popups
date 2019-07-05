@@ -1,1 +1,3 @@
-main_image
+h-full
+w-auto
+m-4

@@ -1,0 +1,11 @@
+bg-blue-800
+hover:bg-pink-500
+bg_slow_change
+py-4
+px-12
+m-4
+rounded
+cursor-pointer
+text-white
+text-xl
+font-bold

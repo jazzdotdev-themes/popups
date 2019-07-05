@@ -7,9 +7,10 @@
 }
 
 .welcome_mat__popup{
-    .main_image {
-        height: 50%;
-        width: 50%;
+
+    label.exit_icon {
+        @include exit_icon_size(18px);
+
     }
-    
+
 }

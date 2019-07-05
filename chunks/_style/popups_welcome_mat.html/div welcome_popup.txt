@@ -7,7 +7,7 @@ left-0
 popup__box
 p-0
 fixed
-flex
 justify-center
 items-center
-flex-wrap
+flex
+flex-col

@@ -12,9 +12,9 @@
 }
 
 .exit_intent_popup{
-    .exit_icon {
-        @include exit_icon_size(28px);
+
+    label.exit_icon {
+        @include exit_icon_size(32px);
     }
 
-    
 }

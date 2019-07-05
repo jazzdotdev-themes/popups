@@ -1,0 +1,5 @@
+text-center
+text-5xl
+text-blue-300
+m-1
+font-black
