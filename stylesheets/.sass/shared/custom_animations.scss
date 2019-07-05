@@ -1,0 +1,18 @@
+.levitate_animation {
+    animation-name: levitate_animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@include keyframes("levitate_animation"){
+    0% , 100%{
+        @include multi_browser("transform", "translateY(-2px)");
+    }
+    30%, 70%{
+        @include multi_browser("transform", "translateY(-5px)");
+    }
+    50%{
+        @include multi_browser("transform", "translateY(-8px)");
+    }
+}

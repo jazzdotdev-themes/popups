@@ -1,1 +1,4 @@
 flex
+flex-wrap
+justify-center
+w-full

@@ -13,4 +13,10 @@
 
     }
 
+    .buttons_levitate__animations{
+        &:active,&:hover{
+            @extend .levitate_animation ;
+        }
+    }
+
 }
